@@ -16,20 +16,6 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
-
-local plugins = {
-  {
-    "tiagovla/tokyodark.nvim",
-    opts = {
-        -- custom options here
-        priority = 1000,
-    },
-    config = function(_, opts)
-        require("tokyodark").setup(opts) -- calling setup is optional
-        vim.cmd [[colorscheme tokyodark]]
-    end,
-  }
-}
 local opts = {}
 
-require("lazy").setup(plugins, opts)
+require("lazy").setup("plugins")
