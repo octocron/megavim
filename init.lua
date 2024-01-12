@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -13,5 +12,9 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 local opts = {}
 
-require("config")
+
+require("config.autocmds")
+require("config.keymaps")
+require("config.options")
+require("config.settings")
 require("lazy").setup("plugins")
