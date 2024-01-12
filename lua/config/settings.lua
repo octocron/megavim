@@ -18,12 +18,20 @@ o.relativenumber = true
 o.signcolumn = "yes"
 o.cursorline = true
 
+-- tabbing and indenting
 o.expandtab = true
+o.smarttab = true
 o.tabstop = 2
 o.softtabstop = 2
 o.shiftwidth = 2
 o.cindent = true
+o.autoindent = true
 
+-- wrapper
+o.wrap = true
+o.textwidth = 300
+
+-- decorators
 o.list = true
 o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
 

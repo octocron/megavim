@@ -5,6 +5,7 @@ return {
   config = function()
     local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
+    --local dashboard = require("alpha.themes.startify")
 
     -- Set header
     dashboard.section.header.val = {
@@ -27,7 +28,9 @@ return {
         [[       ▀███ █████████████ ███▀        ]],
         [[         ▀█ ███ ▄▄▄▄▄ ███ █▀          ]],
         [[            ▀█▌▐█████▌▐█▀             ]],
-        [[               ███████                ]]
+        [[               ███████                ]],
+        "",
+        [[          megavim by megacron         ]],
     }
 
     -- Set menu
