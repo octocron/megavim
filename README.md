@@ -35,11 +35,14 @@ nvim                # launched nvim at splash screen @pwd
 nvim .              # launch @pwd without splash
 ```
 
-:keyboard: File Commands
+### :bulb: File Commands
 ```zsh
 :Lazy               # manage lazyvim plugin
 :Glow               # render markdown in a popup window
-
+```
+### :keyboard: [keybindings](https://www.lazyvim.org/keymaps)
+```zsh
 <space>             # neovim leader key
+\                   # local leader key
 <C-a>               # tmux leader key if using my config
 ```
