@@ -8,7 +8,7 @@
 - No clear methodology, this approach sucked.
 - Chosing managed by LazyVim means this repo is useless.
 
-#### :building_construction: megavim uses as a plugin and selectively adds features.
+#### :building_construction: megavim uses LazyVim as a plugin, selectively adds features.
 - This repo started with blank slate, therefore is uncluttered.
 - Has clear methodology, making it easy to maintain.
 - Unwanted features are fully removable by deleting unwanted lua file under plugins folder
