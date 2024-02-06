@@ -16,6 +16,10 @@ return {
       vim.keymap.set('n', '<leader>fq', builtin.quickfix, { desc = "quickfix list" })
       vim.keymap.set('n', '<leader>fr', builtin.registers, { desc = "vim registers" })
       vim.keymap.set('n', '<leader>fs', builtin.grep_string, { desc = "grep string" })
+      vim.keymap.set('n', '<leader>ga', builtin.git_stash, { desc = "show git stashes" })
+      vim.keymap.set('n', '<leader>gb', builtin.git_branches, { desc = "show git branches" })
+      vim.keymap.set('n', '<leader>gc', builtin.git_commits, { desc = "show git commits" })
+      vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "show git status" })
     end
   },
   {
