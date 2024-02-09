@@ -11,5 +11,10 @@ return {
       border = "double",
       winblend = 100,
     },
+    opts = function(_, opts)
+      if require("lazyvim.util").has("noice.nvim") then
+        opts.defaults["<leader>sn"] = { name = "+noice" }
+      end
+    end,
   },
 }
