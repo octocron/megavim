@@ -46,3 +46,15 @@ nvim .              # launch @pwd without splash
 \                   # local leader key
 <C-a>               # tmux leader key if using my config
 ```
+
+### :necktie: Delta
+```zsh
+# install for mac & config
+brew install git-delta
+
+# open :LazyGit > press 1 > press e then save the following:
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+```
