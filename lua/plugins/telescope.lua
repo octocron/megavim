@@ -20,6 +20,7 @@ return {
       vim.keymap.set('n', '<leader>gb', builtin.git_branches, { desc = "show git branches" })
       vim.keymap.set('n', '<leader>gc', builtin.git_commits, { desc = "show git commits" })
       vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "show git status" })
+      vim.keymap.set("n", "<leader>tx", builtin.resume, { noremap = true, silent = true, desc = "last telescope pick" })
     end
   },
   {
