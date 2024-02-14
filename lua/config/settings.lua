@@ -4,6 +4,9 @@ local opt = vim.opt
 
 o.termguicolors = true
 
+-- display a confirm when closing unsaved
+o.confirm = true
+
 -- decrease update time
 o.timeoutlen = 500
 o.updatetime = 200
@@ -13,7 +16,7 @@ o.scrolloff = 8
 
 -- improve editor UI
 o.number = true
-o.numberwidth =6
+o.numberwidth = 6
 o.relativenumber = true
 o.signcolumn = "yes"
 o.cursorline = true
@@ -23,9 +26,14 @@ o.expandtab = true
 o.smarttab = true
 o.tabstop = 2
 o.softtabstop = 2
-o.shiftwidth = 2
+o.shiftwidth = 4
 o.cindent = true
 o.autoindent = true
+
+-- folding
+o.foldmethod = "indent"
+o.foldnestmax = 3
+o.nofoldenable = true
 
 -- wrapper
 o.wrap = true
@@ -39,6 +47,8 @@ o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
 o.clipboard = "unnamedplus"
 
 -- Case insensitive searching UNLESS /C or capital in search
+o.hlsearch = true
+o.incsearch = true
 o.ignorecase = true
 o.smartcase = true
 
@@ -60,4 +70,3 @@ opt.mouse = "a"
 -- Map <leader> to space
 g.mapleader = " "
 g.maplocalleader = " "
-
