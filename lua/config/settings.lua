@@ -1,7 +1,15 @@
+-- set variable scope
+-- (g) global (b) buffer (w) current window (t) tabpage
+-- (v) predefined variables (env) environment variables
 local g = vim.g
+
+-- vim.o behaves like :set vim.go behaves like :setglobal
 local o = vim.o
+
+-- vim.opt sets global and local options (behaves like :set)
 local opt = vim.opt
 
+-- add 24bit color
 o.termguicolors = true
 
 -- display a confirm when closing unsaved
@@ -14,26 +22,28 @@ o.updatetime = 200
 -- number of lines to keep surrounding cursor
 o.scrolloff = 8
 
--- improve editor UI
+-- line column settings
 o.number = true
 o.numberwidth = 6
 o.relativenumber = true
 o.signcolumn = "yes"
 o.cursorline = true
+--o.colorcolumn = "80"
 
 -- tabbing and indenting
 o.expandtab = true
 o.smarttab = true
 o.tabstop = 2
 o.softtabstop = 2
-o.shiftwidth = 4
+o.shiftwidth = 2
 o.cindent = true
 o.autoindent = true
 
 -- folding
 o.foldmethod = "indent"
 o.foldnestmax = 3
-o.nofoldenable = true
+o.foldenable = true
+o.foldcolum = "1"
 
 -- wrapper
 o.wrap = true
@@ -43,30 +53,36 @@ o.textwidth = 300
 o.list = true
 o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
 
--- Makes neovim and host OS clipboard play nicely with each other
-o.clipboard = "unnamedplus"
+-- better completion experience
+opt.completeopt = { "menuone", "noselect" }
 
--- Case insensitive searching UNLESS /C or capital in search
+-- add access to system clipboard
+o.clipboard = "unnamed,unnamedplus"
+
+-- case insensitive searching UNLESS /C or capital in search
 o.hlsearch = true
 o.incsearch = true
 o.ignorecase = true
 o.smartcase = true
 
--- Undo and backup options
+-- undo and backup options
 o.backup = false
 o.writebackup = false
 o.undofile = true
 o.swapfile = false
 
--- Remember 50 items in commandline history
+-- remember 50 items in commandline history
 o.history = 50
 
--- Better buffer splitting
+-- create undo history file to perisist data
+o.undofile = true
+
+-- better buffer splitting
 o.splitright = true
 o.splitbelow = true
 
 opt.mouse = "a"
 
--- Map <leader> to space
+-- map <leader> to space
 g.mapleader = " "
 g.maplocalleader = " "
