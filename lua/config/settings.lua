@@ -1,12 +1,12 @@
 -- set variable scope
--- (g) global (b) buffer (w) current window (t) tabpage
+-- INFO: (g) global (b) buffer (w) current window (t) tabpage
 -- (v) predefined variables (env) environment variables
 local g = vim.g
 
--- vim.o behaves like :set vim.go behaves like :setglobal
+-- INFO: vim.o behaves like :set vim.go behaves like :setglobal
 local o = vim.o
 
--- vim.opt sets global and local options (behaves like :set)
+-- INFO: vim.opt sets global and local options (behaves like :set)
 local opt = vim.opt
 
 -- add 24bit color
@@ -40,10 +40,11 @@ o.cindent = true
 o.autoindent = true
 
 -- folding
+o.nofoldenable = true
+o.foldlevelstart = 99
 o.foldmethod = "indent"
 o.foldnestmax = 3
-o.foldenable = true
-o.foldcolum = "1"
+o.foldcolumn = "1"
 
 -- wrapper
 o.wrap = true

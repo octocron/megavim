@@ -1,3 +1,6 @@
+--------------------------------------------------------------------------------
+-- Telescope
+--------------------------------------------------------------------------------
 return {
   {
     "nvim-telescope/telescope.nvim",
@@ -23,6 +26,9 @@ return {
       vim.keymap.set("n", "<leader>tx", builtin.resume, { noremap = true, silent = true, desc = "last telescope pick" })
     end
   },
+--------------------------------------------------------------------------------
+-- Telescope UI Select
+--------------------------------------------------------------------------------
   {
     "nvim-telescope/telescope-ui-select.nvim",
     config = function()

@@ -1,12 +1,15 @@
+--------------------------------------------------------------------------------
+-- Mason
+--------------------------------------------------------------------------------
 return {
-  -- NOTE:Mason is installed
+  -- INFO:Installs Mason
   {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
     end
   },
-  -- NOTE: bridge for mason with lspconfig plugin by installing servers on your system
+  -- INFO: bridge for mason with lspconfig plugin by installing servers on your system
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
@@ -15,7 +18,7 @@ return {
     })
   end
   },
-  -- NOTE: the actual lsp plugin
+  -- INFO: the actual lsp plugin
   {
     "neovim/nvim-lspconfig",
     config = function()
