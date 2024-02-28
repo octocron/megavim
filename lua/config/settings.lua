@@ -15,6 +15,9 @@ o.termguicolors = true
 -- display a confirm when closing unsaved
 o.confirm = true
 
+-- disable codeium tab
+g.codeium_no_map_tab = true
+
 -- decrease update time
 o.timeoutlen = 500
 o.updatetime = 200
