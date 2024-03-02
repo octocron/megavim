@@ -1,5 +1,5 @@
-# :trollface: Neovim with NixOS
-> LazyVim is either full setup as LazyVim manages or as a plugin.
+# :snowflake: Neovim with NixOS
+> Use Nix to create Neovim environment.
 ## Starter vs Plugin
 #### :baby_bottle: Starter by LazyVim
 - Template use [LazyVim](https://github.com/LazyVim/LazyVim)
