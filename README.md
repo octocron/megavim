@@ -1,4 +1,4 @@
-# :zzz: LazyVim
+# :trollface: Neovim with NixOS
 > LazyVim is either full setup as LazyVim manages or as a plugin.
 ## Starter vs Plugin
 #### :baby_bottle: Starter by LazyVim
