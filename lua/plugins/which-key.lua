@@ -10,9 +10,8 @@ return {
   end,
   opts = {
     window = {
-      position = "bottom",
       border = "double",
-      winblend = 100,
+      winblend = 0,
     },
     opts = function(_, opts)
       if require("lazyvim.util").has("noice.nvim") then

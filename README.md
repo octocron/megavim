@@ -37,8 +37,12 @@ nvim .              # launch @pwd without splash
 
 ### :bulb: File Commands
 ```zsh
-:Lazy               # manage lazyvim plugin
 :Glow               # render markdown in a popup window
+:Lazy               # manage lazyvim plugin
+:LazyGit            # open lazygit
+:messages           # show message history
+:Noice              # show full message history
+:Telescope keymaps  # search keymaps
 ```
 ### :keyboard: [keybindings](https://www.lazyvim.org/keymaps)
 ```zsh
