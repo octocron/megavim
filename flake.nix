@@ -27,7 +27,7 @@
       src = ./.;
 
       snowfall = {
-        namespace = "plusultra";
+        namespace = "megaos";
       };
 
       channels-config.allowUnfree = true;
