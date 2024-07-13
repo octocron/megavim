@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    devenv.url = "github:cachix/devenv";
 
     nixvim = {
       url = "gitlab:megacron/megavim/nixvim";
@@ -47,20 +48,10 @@
             };
           };
 
-<<<<<<< HEAD
           packages = {
             # Lets you run `nix run .` to start nixvim
             default = nvim;
           };
-||||||| 3e45b01
-      snowfall = {
-        namespace = "plusultra";
-      };
-=======
-      snowfall = {
-        namespace = "megaos";
-      };
->>>>>>> 794a8fbcf410ebd2d2ee380aec693e0f643bf9a6
 
           pre-commit-check = pre-commit-hooks.lib.${system}.run {
             src = ./.;
