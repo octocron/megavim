@@ -3,50 +3,50 @@
     ./keys.nix
     ./sets.nix
 
-    ./plug/colorscheme/colorscheme.nix
+    ./colorscheme/colorscheme.nix
 
-    ./plug/completion/cmp.nix
-    ./plug/completion/copilot-cmp.nix
-    ./plug/completion/lspkind.nix
+    ./completion/cmp.nix
+    ./completion/copilot-cmp.nix
+    ./completion/lspkind.nix
 
-    ./plug/git/gitsigns.nix
-    ./plug/git/lazygit.nix
+    ./git/gitsigns.nix
+    ./git/lazygit.nix
 
-    ./plug/lsp/conform.nix
-    ./plug/lsp/fidget.nix
-    ./plug/lsp/lsp.nix
-    ./plug/lsp/lspsaga.nix
-    ./plug/lsp/none-ls.nix
+    ./lsp/conform.nix
+    ./lsp/fidget.nix
+    ./lsp/lsp.nix
+    ./lsp/lspsaga.nix
+    ./lsp/none-ls.nix
 
-    ./plug/notes/markdown-preview.nix
-    ./plug/notes/pencil.nix
-    ./plug/notes/twilight.nix
-    ./plug/notes/zen-mod.nix
+    ./notes/markdown-preview.nix
+    ./notes/pencil.nix
+    ./notes/twilight.nix
+    ./notes/zen-mod.nix
 
-    ./plug/snippets/luasnip.nix
+    ./snippets/luasnip.nix
 
-    ./plug/statusline/lualine.nix
-    #./plug/statusline/staline.nix
+    ./statusline/lualine.nix
+    #/statusline/staline.nix
 
-    ./plug/treesitter/treesitter-context.nix
-    ./plug/treesitter/treesitter-textobjects.nix
-    ./plug/treesitter/treesitter.nix
+    ./treesitter/treesitter-context.nix
+    ./treesitter/treesitter-textobjects.nix
+    ./treesitter/treesitter.nix
 
-    ./plug/ui/alpha.nix
-    ./plug/ui/bufferline.nix
-    ./plug/ui/noice.nix
-    ./plug/ui/nvim-notify.nix
-    ./plug/ui/telescope-zoxide.nix
-    ./plug/ui/telescope.nix
+    ./ui/alpha.nix
+    ./ui/bufferline.nix
+    ./ui/noice.nix
+    ./ui/nvim-notify.nix
+    ./ui/telescope-zoxide.nix
+    ./ui/telescope.nix
 
-    ./plug/utils/copilot-lua.nix
-    ./plug/utils/hardtime.nix
-    ./plug/utils/harpoon.nix
-    ./plug/utils/illuminate.nix
-    ./plug/utils/nvim-autopairs.nix
-    ./plug/utils/oil.nix
-    ./plug/utils/telescope-gitmoji.nix
-    ./plug/utils/undotree.nix
-    ./plug/utils/whichkey.nix
+    ./utils/copilot-lua.nix
+    ./utils/hardtime.nix
+    ./utils/harpoon.nix
+    ./utils/illuminate.nix
+    ./utils/nvim-autopairs.nix
+    ./utils/oil.nix
+    ./utils/telescope-gitmoji.nix
+    ./utils/undotree.nix
+    ./utils/whichkey.nix
   ];
 }
