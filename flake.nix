@@ -17,7 +17,7 @@
     };
   };
 
-  outputs = { self, flake-parts, nixpkgs, nixvim, pre-commit-hooks, ... } @ inputs:
+  outputs = { flake-parts, nixpkgs, nixvim, pre-commit-hooks, ... } @ inputs:
     let
       config = import ./config; # import the module directly
     in
@@ -30,7 +30,7 @@
       ];
       imports = [ inputs.devenv.flakeModule ];
 
-      perSystem = { pkgs, system, ... }:
+      perSystem = { self, pkgs, system, ... }:
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
