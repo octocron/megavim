@@ -7,7 +7,7 @@
     devenv.url = "github:cachix/devenv";
 
     nixvim = {
-      url = "gitlab:megacron/megavim/nixvim";
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
