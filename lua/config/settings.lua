@@ -43,7 +43,7 @@ o.cindent = true
 o.autoindent = true
 
 -- folding
-o.nofoldenable = true
+-- o.nofoldenable = true
 o.foldlevelstart = 99
 o.foldmethod = "indent"
 o.foldnestmax = 3
