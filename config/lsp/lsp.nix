@@ -4,17 +4,23 @@
       enable = true;
 
       servers = {
+        gopls.enable = true;
         kotlin-language-server.enable = true;
         lua-ls.enable = true;
         marksman.enable = true;
         nil-ls.enable = true;
         nushell.enable = true;
         pylsp.enable = true;
+        terraformls.enable = true;
         yamlls.enable = true;
       };
     };
 
     lspkind = {
+      enable = true;
+    };
+
+    lsp-format = {
       enable = true;
     };
 

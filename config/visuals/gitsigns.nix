@@ -1,8 +1,31 @@
 {
   plugins.gitsigns = {
     enable = true;
-    settings.current_line_blame = false;
+    settings = {
+      current_line_blame = false;
+      signs = {
+        add = {
+          text = "│";
+        };
+        change = {
+          text = "│";
+        };
+        delete = {
+          text = "_";
+        };
+        topdelete = {
+          text = "‾";
+        };
+        changedelete = {
+          text = "~";
+        };
+        untracked = {
+          text = "│";
+        };
+      };
+    };
   };
+
   keymaps = [
     {
       mode = "n";

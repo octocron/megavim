@@ -1,22 +1,28 @@
 {
-  description = "Chris' NeoVim configuration";
+  description = "megavim - a standalone package";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    #stylix.url = "github:danth/stylix";
     nix-colors.url = "github:misterio77/nix-colors";
+    #devenv.url = "github:cachix/devenv";
+
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     tree-sitter-nu = {
       url = "github:nushell/tree-sitter-nu";
       flake = false;
     };
+
     tree-sitter-surrealdb = {
       url = "github:dariuscorvus/tree-sitter-surrealdb";
       flake = false;
     };
+
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -72,7 +78,7 @@
         checks = {
           default = pkgs.nixvimLib.check.mkTestDerivationFromNvim {
             inherit nvim;
-            name = "A nixvim configuration";
+            name = "megavim";
           };
 
           pre-commit-check = pre-commit-hooks.lib.${system}.run {
