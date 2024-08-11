@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      trouble = true;
+      #trouble = true;
       currentLineBlame = true;
       signs = {
         add = {

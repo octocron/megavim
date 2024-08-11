@@ -6,20 +6,20 @@
     ./colorscheme/colorscheme.nix
 
     #./completion/cmp.nix
-    ./completion/copilot-cmp.nix
-    ./completion/lspkind.nix
+    #./completion/copilot-cmp.nix
+    #./completion/lspkind.nix
 
     ./git/gitsigns.nix
     ./git/lazygit.nix
 
-    #./lsp/conform.nix
-    #./lsp/fidget.nix
-    #./lsp/lsp.nix
-    #./lsp/lspsaga.nix
+    ./lsp/conform.nix
+    ./lsp/fidget.nix
+    ./lsp/lsp.nix
+    ./lsp/lspsaga.nix
     #./lsp/none-ls.nix
-    #./lsp/trouble.nix
+    ./lsp/trouble.nix
 
-    ./notes/markdown-preview.nix
+    #./notes/markdown-preview.nix
     ./notes/pencil.nix
     ./notes/twilight.nix
     ./notes/zen-mod.nix
@@ -37,10 +37,10 @@
     ./ui/bufferline.nix
     ./ui/noice.nix
     ./ui/nvim-notify.nix
-    ./ui/telescope-zoxide.nix
+    #./ui/telescope-zoxide.nix
     ./ui/telescope.nix
 
-    ./utils/copilot-lua.nix
+    #./utils/copilot-lua.nix
     ./utils/hardtime.nix
     ./utils/harpoon.nix
     ./utils/illuminate.nix
