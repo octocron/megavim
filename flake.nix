@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    #stylix.url = "github:danth/stylix";
     devenv.url = "github:cachix/devenv";
 
     nixvim = {
@@ -18,54 +19,60 @@
   };
 
   outputs = { flake-parts, nixpkgs, nixvim, pre-commit-hooks, ... } @ inputs:
-    let
-      config = import ./config; # import the module directly
-    in
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
-        "x86_64-linux"
         "aarch64-linux"
-        "x86_64-darwin"
+        "x86_64-linux"
         "aarch64-darwin"
+        "x86_64-darwin"
       ];
       imports = [ inputs.devenv.flakeModule ];
 
-      perSystem = { self, pkgs, system, ... }:
+      perSystem = { self, lib, pkgs, system, ... }:
         let
-          nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nvim = nixvim'.makeNixvimWithModule {
             inherit pkgs;
-            module = config;
+            module = ./config;
           };
         in
         {
+          _module.args.pkgs = import nixpkgs {
+            inherit system;
+            overlays = builtins.attrValues {
+              default = import ./overlay {
+                inherit nixvim lib system;
+              };
+            };
+          };
+
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
-            default = nixvimLib.check.mkTestDerivationFromNvim {
+            default = pkgs.nixvimLib.check.mkTestDerivationFromNvim {
               inherit nvim;
               name = "megavim";
             };
+
+            pre-commit-check = pre-commit-hooks.lib.${system}.run {
+              src = ./.;
+              hooks = {
+                statix.enable = true;
+                alejandra.enable = true;
+              };
+            };
           };
+
+          formatter = pkgs.alejandra;
 
           packages = {
             # Lets you run `nix run .` to start nixvim
             default = nvim;
           };
 
-          pre-commit-check = pre-commit-hooks.lib.${system}.run {
-            src = ./.;
-            hooks = {
-              alejandra.enable = true;
-            };
-          };
-
           devShells = {
-            default = pkgs.mkShell {
-              inherit (self.checks.pre-commit-check) shellHook;
-              buildInputs = with pkgs; [
-                alejandra
-              ];
+            default = with pkgs;
+              mkShell {
+              inherit (self'.checks.pre-commit-check) shellHook;
             };
           };
         };
