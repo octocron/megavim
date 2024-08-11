@@ -37,14 +37,14 @@
           };
         in
         {
-          _module.args.pkgs = import nixpkgs {
-            inherit system;
-            overlays = builtins.attrValues {
-              default = import ./overlay {
-                inherit nixvim lib system;
-              };
-            };
-          };
+          #_module.args.pkgs = import nixpkgs {
+          #  inherit system;
+          #  overlays = builtins.attrValues {
+          #    default = import ./overlay {
+          #      inherit nixvim lib system;
+          #    };
+          # };
+          #};
 
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
