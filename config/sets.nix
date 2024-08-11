@@ -1,11 +1,11 @@
 {
   config = {
-    options = {
+    opts = {
       # Enable relative line numbers
       number = true;
       relativenumber = true;
 
-      # Set tabs to 2 spaces 
+      # Set tabs to 2 spaces
       tabstop = 2;
       softtabstop = 2;
       showtabline = 2;
@@ -49,7 +49,7 @@
       backup = false;
       undofile = true;
 
-      # Enable 24-bit colors 
+      # Enable 24-bit colors
       termguicolors = true;
 
       # Enable the sign column to prevent the screen from jumping

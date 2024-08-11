@@ -1,29 +1,33 @@
 {
   plugins.gitsigns = {
     enable = true;
-    trouble = true;
-    currentLineBlame = true;
-    signs = {
-      add = {
-        text = "│";
-      };
-      change = {
-        text = "│";
-      };
-      delete = {
-        text = "_";
-      };
-      topdelete = {
-        text = "‾";
-      };
-      changedelete = {
-        text = "~";
-      };
-      untracked = {
-        text = "│";
+
+    settings = {
+      trouble = true;
+      currentLineBlame = true;
+      signs = {
+        add = {
+          text = "│";
+        };
+        change = {
+          text = "│";
+        };
+        delete = {
+          text = "_";
+        };
+        topdelete = {
+          text = "‾";
+        };
+        changedelete = {
+          text = "~";
+        };
+        untracked = {
+          text = "│";
+        };
       };
     };
   };
+
   keymaps = [
     {
       mode = [ "n" "v" ];

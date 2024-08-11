@@ -5,18 +5,19 @@
 
     ./colorscheme/colorscheme.nix
 
-    ./completion/cmp.nix
+    #./completion/cmp.nix
     ./completion/copilot-cmp.nix
     ./completion/lspkind.nix
 
     ./git/gitsigns.nix
     ./git/lazygit.nix
 
-    ./lsp/conform.nix
-    ./lsp/fidget.nix
-    ./lsp/lsp.nix
-    ./lsp/lspsaga.nix
-    ./lsp/none-ls.nix
+    #./lsp/conform.nix
+    #./lsp/fidget.nix
+    #./lsp/lsp.nix
+    #./lsp/lspsaga.nix
+    #./lsp/none-ls.nix
+    #./lsp/trouble.nix
 
     ./notes/markdown-preview.nix
     ./notes/pencil.nix
@@ -44,7 +45,7 @@
     ./utils/harpoon.nix
     ./utils/illuminate.nix
     ./utils/nvim-autopairs.nix
-    ./utils/oil.nix
+    #./utils/oil.nix
     ./utils/telescope-gitmoji.nix
     ./utils/undotree.nix
     ./utils/whichkey.nix
