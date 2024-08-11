@@ -30,10 +30,11 @@
 
       perSystem = { self, lib, pkgs, system, ... }:
         let
+          nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nvim = nixvim'.makeNixvimWithModule {
             inherit pkgs;
-            module = ./config;
+            module = ./config/default.nix;
           };
         in
         {
@@ -48,7 +49,7 @@
 
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
-            default = pkgs.nixvimLib.check.mkTestDerivationFromNvim {
+            default = nixvimLib.check.mkTestDerivationFromNvim {
               inherit nvim;
               name = "megavim";
             };
