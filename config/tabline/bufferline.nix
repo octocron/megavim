@@ -1,9 +1,13 @@
 {
   plugins.bufferline = {
     enable = true;
-    numbers = "none";
-    diagnostics = "nvim_lsp";
-    separatorStyle = "slope";
+    settings = {
+      diagnostics = "nvim_lsp";
+      options = {
+        numbers = "none";
+        separatorStyle = "slope";
+      };
+    };
   };
   keymaps = [
     {
