@@ -4,7 +4,7 @@
 ## :joystick: How to Run
 You can run this directly from the command line with:
 ```shell
-nix run gitlab:megacron/nixvim
+nix run gitlab:megacron/megavim
 ```
 
 ## :floppy_disk: Install
@@ -12,7 +12,7 @@ You can also plug this into a flake to include it into a system configuration.
 ```nix
 {
   inputs = {
-    megavim.url = "gitlab:megacron/nixvim";
+    megavim.url = "gitlab:megacron/megavim";
   };
 }
 ```
