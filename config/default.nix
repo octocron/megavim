@@ -1,6 +1,14 @@
 {
-  # Import all your configuration modules here
   imports = [
-    ./full.nix
+    ./autopairs
+    ./comments
+    ./core
+    ./filetree
+    ./lsp
+    ./statusline
+    ./tabline
+    ./telescope
+    ./treesitter
+    ./visuals
   ];
 }

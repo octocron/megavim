@@ -5,10 +5,10 @@
 You can run this directly from the command line with:
 ```shell
 # Full featured version
-nix run github:megacron/nixvim
+nix run gitlab:megacron/nixvim
 
 # Lighter version without lsp.
-nix run github:megacron/nixvim#lite
+nix run gitlab:megacron/nixvim#lite
 ```
 
 ## :floppy_disk: Install
@@ -16,7 +16,7 @@ You can also plug this into a flake to include it into a system configuration.
 ```nix
 {
   inputs = {
-    megavim.url = "github:megacron/nixvim";
+    megavim.url = "gitlab:megacron/nixvim";
   };
 }
 ```
