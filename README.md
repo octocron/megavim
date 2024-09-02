@@ -4,11 +4,7 @@
 ## :joystick: How to Run
 You can run this directly from the command line with:
 ```shell
-# Full featured version
 nix run gitlab:megacron/nixvim
-
-# Lighter version without lsp.
-nix run gitlab:megacron/nixvim#lite
 ```
 
 ## :floppy_disk: Install
