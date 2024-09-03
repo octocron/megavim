@@ -11,6 +11,7 @@
     ./lastplace.nix
     ./noice.nix
     ./notify.nix
+    ./precognition.nix
     ./rainbow-delimiters.nix
     ./theme
     ./undotree.nix
