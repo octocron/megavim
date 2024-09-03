@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ ... }: {
   plugins.lualine = {
     enable = true;
 
@@ -13,7 +13,7 @@
     };
 
     sections = {
-            lualine_a = [
+      lualine_a = [
         {
           name = "mode";
           icon = "";
