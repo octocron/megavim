@@ -4,6 +4,7 @@
     ./comments
     ./core
     ./filetree
+    ./glow
     ./lsp
     ./statusline
     ./tabline

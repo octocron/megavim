@@ -1,6 +1,6 @@
 {
   imports = [
-    ./gruvbox.nix
+    ./selector.nix
     ./transparent-background.nix
   ];
 }
