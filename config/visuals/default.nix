@@ -1,6 +1,6 @@
 {
   imports = [
-    ./aerial.nix
+    #./aerial.nix
     ./alpha.nix
     ./bbye.nix
     ./fidget.nix
