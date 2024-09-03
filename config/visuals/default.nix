@@ -1,6 +1,7 @@
 {
   imports = [
     #./aerial.nix
+    ./theme
     ./alpha.nix
     ./bbye.nix
     ./fidget.nix
@@ -13,7 +14,7 @@
     ./notify.nix
     ./precognition.nix
     ./rainbow-delimiters.nix
-    ./theme
+    ./toggleterm.nix
     ./undotree.nix
     ./which-key.nix
   ];
