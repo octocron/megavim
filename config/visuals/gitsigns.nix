@@ -5,13 +5,13 @@
       current_line_blame = false;
       signs = {
         add = {
-          text = "│";
+          text = "+";
         };
         change = {
-          text = "│";
+          text = "^";
         };
         delete = {
-          text = "_";
+          text = "-";
         };
         topdelete = {
           text = "‾";

@@ -14,7 +14,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<C-n>";
+      key = "<leader>ee";
       action = "<cmd>lua require('nvim-tree.api').tree.toggle()<CR>";
       options.desc = "Toggle Tree";
     }

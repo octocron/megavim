@@ -69,7 +69,7 @@
           (
             mkButton
             "e"
-            "<CMD>lua require('nvim-tree.builtin').NvimTreeToggle<CR>"
+            "<CMD>lua require('nvim-tree.api').tree.toggle()<CR>"
             "🗃 File Explorer"
             "Operator"
           )
