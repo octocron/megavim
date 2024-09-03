@@ -3,6 +3,5 @@
 {
   plugins.glow = {
     enable = true;
-    style = "dark";
   };
 }
