@@ -30,7 +30,7 @@
       listchars = "trail:●,nbsp:+,tab:→ ,extends:▸,precedes:◂";
 
       # folding
-      nofoldenable = true;
+      foldenable = false;
       foldlevelstart = 99;
       foldmethod = "indent";
       foldnestmax = 3;
