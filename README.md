@@ -7,16 +7,28 @@ You can run this directly from the command line with:
 nix run gitlab:megacron/megavim
 ```
 
-## :floppy_disk: Install
+## :floppy_disk: Direct Install
 You can also plug this into a flake to include it into a system configuration.
 ```nix
+# flake.nix
 {
   inputs = {
     megavim.url = "gitlab:megacron/megavim";
   };
 }
 ```
+```nix
+# configuration.nix
+{ inputs, system, ... }:
+{
+  # NixOS
+  environment.systemPackages = [ inputs.megavim.packages.${system}.default ];
+  # home-manager
+  home.packages = [ inputs.megavim.packages.${system}.default ];
+}
+```
 
+## :flying_saucer: Overlay
 This input can then be used as an overlay to replace the default neovim.
 ```nix
 { megavim, ... }:
