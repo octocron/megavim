@@ -20,7 +20,7 @@
         "       ▀███ █████████████ ███▀           "
         "         ▀█ ███ ▄▄▄▄▄ ███ █▀             "
         "            ▀█▌▐█████▌▐█▀                "
-        "                ███████                  "
+        "               ███████                   "
         ""
         "           megavim by megacron           "
 
@@ -68,9 +68,30 @@
         in [
           (
             mkButton
+            "e"
+            "<CMD>lua require('nvim-tree.builtin').NvimTreeToggle<CR>"
+            "🗃 File Explorer"
+            "Operator"
+          )
+          (
+            mkButton
             "f"
             "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>"
-            "🔍 Find File"
+            "📂 Find File"
+            "Operator"
+          )
+          (
+            mkButton
+            "g"
+            "<CMD>lua require('telescope.builtin').live_grep({hidden = true})<CR>"
+            "📃 Grep Files"
+            "Operator"
+          )
+          (
+            mkButton
+            "r"
+            "<CMD>lua require('telescope.builtin').oldfiles({hidden = true})<CR>"
+            "🗂 Recent Files"
             "Operator"
           )
           (
