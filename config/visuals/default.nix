@@ -10,6 +10,7 @@
     ./illuminate.nix
     ./indent-blankline.nix
     ./lastplace.nix
+    ./lazygit.nix
     ./noice.nix
     ./notify.nix
     ./precognition.nix
