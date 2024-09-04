@@ -7,6 +7,7 @@
 :LazyGit                        # lazy git
 :messages                       # show message history
 :Noice                          # show full message history
+:Precognition toggle            # vim suggestions toggle
 :Telescope                      # fuzzy finder
 :Telescope keymaps              # search keymaps
 :ToggleTerm direction=float     # toggle terminal
