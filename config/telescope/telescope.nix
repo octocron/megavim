@@ -1,16 +1,30 @@
 {
   plugins.telescope = {
     enable = true;
-    settings.defaults = {
-      file_ignore_patterns = [
-        "^.git/"
-        "^output/"
-        "^target/"
-      ];
+    settings = {
+      defaults = {
+        file_ignore_patterns = [
+          "^.git/"
+          "^output/"
+          "^target/"
+        ];
+      };
+      extensions = {
+        file_browser = {
+          theme = "ivy";
+          hijack_netrw = true;
+        };
+      };
     };
   };
 
   keymaps = [
+    {
+      mode = "n";
+      key = "<leader>fb";
+      action = "<cmd>lua require('telescope').load_extension.file_browser<CR>";
+      options.desc = "File Browser";
+    }
     {
       mode = "n";
       key = "<leader>ff";

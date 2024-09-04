@@ -1,7 +1,18 @@
 :snowflake: [nixvim](https://github.com/nix-community/nixvim)
 
 > A Nix version of Neovim.
-## :joystick: How to Run
+## :joystick: Commands
+```vim
+:Glow                           # toggle markdown preview
+:LazyGit                        # lazy git
+:messages                       # show message history
+:Noice                          # show full message history
+:Telescope                      # fuzzy finder
+:Telescope keymaps              # search keymaps
+:ToggleTerm direction=float     # toggle terminal
+```
+
+## :test_tube: How to Run
 You can run this directly from the command line with:
 ```shell
 nix run gitlab:megacron/megavim
