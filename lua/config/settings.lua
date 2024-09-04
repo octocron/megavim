@@ -18,6 +18,9 @@ o.confirm = true
 -- disable codeium tab
 g.codeium_no_map_tab = true
 
+-- keep messages gone when changing vim modes
+g.showmode = false
+
 -- decrease update time
 o.timeoutlen = 500
 o.updatetime = 200
@@ -25,7 +28,7 @@ o.updatetime = 200
 -- number of lines to keep surrounding cursor
 o.scrolloff = 8
 
--- line column settings
+-- gutter
 o.number = true
 o.numberwidth = 6
 o.relativenumber = true
@@ -43,7 +46,7 @@ o.cindent = true
 o.autoindent = true
 
 -- folding
--- o.nofoldenable = true
+ o.foldenable = false
 o.foldlevelstart = 99
 o.foldmethod = "indent"
 o.foldnestmax = 3
