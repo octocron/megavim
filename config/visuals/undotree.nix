@@ -5,7 +5,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>u";
+      key = "<leader>ut";
       action = "<cmd>UndotreeToggle<CR>";
       options.desc = "Toggle Undotree";
     }

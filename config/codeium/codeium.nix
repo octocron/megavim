@@ -30,13 +30,13 @@
       }
       {
         mode = "n";
-        key = "<leader>sa";
+        key = "<leader>ca";
         action = "<cmd>Codeium Auth<CR>";
         options.desc = "Authorize Codeium";
       }
       {
         mode = "n";
-        key = "<leader>sc";
+        key = "<leader>cc";
         action = "<cmd>Codeium Chat<CR>";
         options= {
           desc = "Authorize Codeium";

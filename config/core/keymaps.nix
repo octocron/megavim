@@ -9,11 +9,16 @@
       }
       {
         mode = "n";
-        key = "<leader>w";
+        key = "<leader>bs";
         action = "<cmd>w<CR>";
         options.desc = "Save Current Buffer";
       }
-
+      {
+        mode = "n";
+        key = "<C-s>";
+        action = "<cmd>w<CR>";
+        options.desc = "Save Current Buffer";
+      }
       {
         mode = "n";
         key = "<C-h>";

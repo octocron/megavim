@@ -7,7 +7,7 @@
     };
     renderer.indentWidth = 1;
     diagnostics.enable = true;
-    view.float.enable = false;    # FIXME: trying false to see if it stays left.
+    view.float.enable = false;
     updateFocusedFile.enable = true;
   };
 

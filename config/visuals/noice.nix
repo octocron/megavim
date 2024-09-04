@@ -35,7 +35,7 @@
     }
     {
       mode = "n";
-      key = "<leader>c";
+      key = "<leader>mc";
       action = "<cmd>lua require('noice').cmd('dismiss')<CR>";
       options.desc = "Clear Messages";
     }

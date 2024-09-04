@@ -6,7 +6,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>b";
+      key = "<leader>bb";
       action = "<cmd>Bdelete<CR>";
       options.desc = "Close Buffer";
     }

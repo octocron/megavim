@@ -69,27 +69,34 @@
           (
             mkButton
             "e"
+            "<CMD>ene<CR>"
+            "📝 New File"
+            "Operator"
+          )
+          (
+            mkButton
+            "SPC ee"
             "<CMD>lua require('nvim-tree.api').tree.toggle()<CR>"
             "🗃 File Explorer"
             "Operator"
           )
           (
             mkButton
-            "f"
+            "SPC ff"
             "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>"
             "📂 Find File"
             "Operator"
           )
           (
             mkButton
-            "g"
+            "SPC fg"
             "<CMD>lua require('telescope.builtin').live_grep({hidden = true})<CR>"
             "📃 Grep Files"
             "Operator"
           )
           (
             mkButton
-            "r"
+            "SPC fr"
             "<CMD>lua require('telescope.builtin').oldfiles({hidden = true})<CR>"
             "🗂 Recent Files"
             "Operator"

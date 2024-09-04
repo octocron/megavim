@@ -9,6 +9,7 @@
       ];
     };
   };
+
   keymaps = [
     {
       mode = "n";
