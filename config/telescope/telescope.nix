@@ -21,7 +21,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>fb";
+      key = "<leader>fB";
       action = "<cmd>lua require('telescope').load_extension.file_browser<CR>";
       options.desc = "File Browser";
     }

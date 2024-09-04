@@ -7,5 +7,17 @@
       direction = "float";
       start_in_insert = true;
     };
+
+    #    keymaps = [
+    #      {
+    #        mode = "n";
+    #        key = "<leader>tt";
+    #        action = ":ToggleTerm<CR>";
+    #        options = {
+    #          desc = "Toggle Terminal";
+    #          silent = true;
+    #        };
+    #      }
+    #    ];
   };
 }

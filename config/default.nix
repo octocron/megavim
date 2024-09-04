@@ -1,6 +1,7 @@
 {
   imports = [
     ./auto
+    ./codeium
     ./comments
     ./core
     ./filetree

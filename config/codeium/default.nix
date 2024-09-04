@@ -1,6 +1,6 @@
 {
   imports = [
-    ./codeium.nix
+    #./codeium.nix
   ];
 }
 
