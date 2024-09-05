@@ -1,5 +1,5 @@
 {
   imports = [
-    ./comment-nvim.nix
+    ./comment.nix
   ];
 }
