@@ -4,6 +4,7 @@
     ./theme
     ./alpha.nix
     ./bbye.nix
+    ./colorizer.nix
     ./fidget.nix
     ./gitsigns.nix
     ./highlight-yank.nix
@@ -18,5 +19,6 @@
     ./toggleterm.nix
     ./undotree.nix
     ./which-key.nix
+    ./wilder.nix
   ];
 }
