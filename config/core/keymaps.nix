@@ -109,6 +109,17 @@
       }
 
       # todo-comments
+
+      # toggleterm
+      {
+        mode = "n";
+        key = "<leader>tt";
+        action = ":ToggleTerm<CR>";
+        options = {
+          desc = "Toggle Terminal";
+          silent = true;
+        };
+      }
     ];
   };
 }
