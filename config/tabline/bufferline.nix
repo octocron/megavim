@@ -2,10 +2,10 @@
   plugins.bufferline = {
     enable = true;
     settings = {
-      diagnostics = "nvim_lsp";
       options = {
         numbers = "none";
         separatorStyle = "slope";
+        diagnostics = "nvim_lsp";
 
         offsets = [
           {

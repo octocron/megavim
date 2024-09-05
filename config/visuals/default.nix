@@ -16,6 +16,7 @@
     ./notify.nix
     ./precognition.nix
     ./rainbow-delimiters.nix
+    ./tmux.nix
     ./toggleterm.nix
     ./undotree.nix
     ./which-key.nix

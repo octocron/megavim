@@ -12,10 +12,13 @@
     keymaps = {
       todoTelescope = {
         key = "<leader>to";
+        options = {
+          desc = "Show TODOs";
+        };
         keywords = [
           "BUG"
           "DEP"
-          "FIXME"
+          "FIX"
           "HACK"
           "NOTE"
           "TEST"

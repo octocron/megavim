@@ -21,7 +21,7 @@
     {
       mode = "n";
       key = "<leader>fB";
-      action = "<cmd>lua require('telescope').load_extension.file_browser<CR>";
+      action = "<cmd>lua require('telescope.builtin').load_extension.file_browser({hidden = true})<CR>";
       options.desc = "File Browser";
     }
     {
