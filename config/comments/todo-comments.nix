@@ -7,7 +7,7 @@
         key = "<leader>to";
         keywords = [
           "BUG"
-          "DEPRECATED"
+          "DEP"
           "FIXME"
           "HACK"
           "NOTE"

@@ -1,5 +1,5 @@
 {
-  plugins.aerial = {
+  plugins.surround = {
     enable = true;
   };
 }

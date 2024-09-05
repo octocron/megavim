@@ -41,6 +41,26 @@
         action = "<C-w>l";
       }
 
+      # aerial
+      {
+        mode = "n";
+        key = "<c-{>";
+        action = "<cmd>AerialPrev<CR>";
+      }
+      {
+        mode = "n";
+        key = "<c-}>";
+        action = "<cmd>AerialNext<CR>";
+      }
+      # FIXME: not working
+      {
+        mode = "n";
+        key = "<leader>aa";
+        action = "<cmd>AerialToggle right<CR>";
+        options.desc = "Aerial Toggle";
+      }
+
+
       # bufferline
       {
         mode = "n";
@@ -103,8 +123,39 @@
         key = "<leader>tc";
         action = "<cmd>Codeium Chat<CR>";
         options = {
-          desc = "Authorize Codeium";
+          desc = "Chat Codeium";
           silent = true;
+        };
+      }
+
+      # glow
+      {
+        mode = "n";
+        key = "<leader>tg";
+        action = ":Glow<CR>";
+        options = {
+          desc = "Toggle Glow";
+          silent = true;
+        };
+      }
+
+      # lazygit
+      {
+        mode = "n";
+        key = "<leader>tl";
+        action = "<cmd>LazyGit<CR>";
+        options = {
+          desc = "Toggle LazyGit";
+        };
+      }
+
+      # precognition
+      {
+        mode = "n";
+        key = "<leader>tp";
+        action = "<cmd>Precognition toggle<CR>";
+        options = {
+          desc = "Toggle Vim Indicators";
         };
       }
 
