@@ -4,15 +4,18 @@
       enable = true;
 
       servers = {
-        gopls.enable = true;
-        kotlin-language-server.enable = true;
-        lua-ls.enable = true;
-        marksman.enable = true;
-        nil-ls.enable = true;
-        nushell.enable = true;
-        pylsp.enable = true;
-        terraformls.enable = true;
-        yamlls.enable = true;
+        gopls.enable = true; # go
+        kotlin-language-server.enable = true; # kotlin
+        pyright.enable = true; # python
+        tsserver.enable = true; # typescript
+        lua-ls.enable = true; # lua
+        marksman.enable = true; # markdown
+        nil-ls.enable = true; # nix
+        jsonls.enable = true; # json
+        nushell.enable = true; # nushell
+        pylsp.enable = true; # python
+        terraformls.enable = true; # terraform
+        yamlls.enable = true; # yaml
       };
     };
 
@@ -49,6 +52,35 @@
       data = ".idea/nvim-jdtls";
     };
 
-    none-ls.enable = true;
+    none-ls = {
+      enable = true;
+      enableLspFormat = true;
+      settings = {
+        updateInInsert = false;
+      };
+      sources = {
+        code_actions = {
+          gitsigns.enable = true;
+          statix.enable = true;
+        };
+        diagnostics = {
+          statix.enable = true;
+          yamllint.enable = true;
+        };
+        formatting = {
+          nixpkgs_fmt.enable = true;
+          black = {
+            enable = true;
+            settings = ''
+              {
+                extra_args = { "--fast" },
+              }
+            '';
+          };
+          stylua.enable = true;
+          yamlfmt.enable = true;
+        };
+      };
+    };
   };
 }

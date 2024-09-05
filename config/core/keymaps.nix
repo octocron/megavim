@@ -42,24 +42,30 @@
       }
 
       # aerial
-      {
-        mode = "n";
-        key = "<c-{>";
-        action = "<cmd>AerialPrev<CR>";
-      }
-      {
-        mode = "n";
-        key = "<c-}>";
-        action = "<cmd>AerialNext<CR>";
-      }
-      # FIXME: not working
-      {
-        mode = "n";
-        key = "<leader>aa";
-        action = "<cmd>AerialToggle right<CR>";
-        options.desc = "Aerial Toggle";
-      }
+      #{
+      #  mode = "n";
+      #  key = "<c-{>";
+      #  action = "<cmd>AerialPrev<CR>";
+      #}
+      #{
+      #  mode = "n";
+      #  key = "<c-}>";
+      #  action = "<cmd>AerialNext<CR>";
+      #}
+      #{
+      #  mode = "n";
+      #  key = "<leader>aa";
+      #  action = "<cmd>AerialToggle right<CR>";
+      #  options.desc = "Aerial Toggle";
+      #}
 
+      # autosave
+      {
+        mode = "n";
+        key = "<leader>ts";
+        action = "<cmd>lua require('autosave').toggle()<CR>";     # :ASToggle
+        options.desc = "Toggle Autosave";
+      }
 
       # bufferline
       {
@@ -149,7 +155,29 @@
         };
       }
 
+      # none-ls
+      {
+        mode = [
+          "n"
+          "v"
+        ];
+        key = "<leader>gf";
+        action = "<cmd>lua vim.lsp.buf.format()<cr>";
+        options = {
+          silent = true;
+          desc = "Format";
+        };
+      }
+
       # precognition
+      {
+        mode = "n";
+        key = "<leader>pp";
+        action = "<cmd>Precognition peek<CR>";
+        options = {
+          desc = "Precog Peek";
+        };
+      }
       {
         mode = "n";
         key = "<leader>tp";

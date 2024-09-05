@@ -1,3 +1,10 @@
+# BUG: huh, what the?
+# FIX: better get on it
+# HACK: oh lard
+# NOTE: did you know?
+# PERF: run good ya?
+# TODO: get ya when I get ya
+# WARNING: better listen up!
 {
   plugins.todo-comments = {
     enable = true;
@@ -16,15 +23,6 @@
         ];
       };
     };
-
-    #settings = {
-    #  colors = {
-    #      error = { "DiagnosticError", "ErrorMsg", "#880022" },
-    #      test = { "Identifier", "#228800" },
-    #      info = { "DiagnosticInfo", "#2563eb" },
-    #    };
-    #  };
-    #};
   };
 }
 
