@@ -6,7 +6,7 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
 
     nixvim = {
-      url = "github:nix-community/nixvim";
+      url = "github:nix-community/nixvim?rev=9c11b54065a554d9976089cfc8a08dee35cabcaa";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
