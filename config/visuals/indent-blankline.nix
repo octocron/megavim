@@ -2,9 +2,13 @@
   plugins.indent-blankline = {
     enable = true;
     settings = {
-      scope.enabled = false;
       indent = {
-        char = "";
+        smart_indent_cap = true;
+        char = " ";
+      };
+      scope = {
+        enabled = true;
+        char = "│";
       };
     };
   };

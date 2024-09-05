@@ -120,7 +120,7 @@
           position = "center";
         };
         type = "text";
-        val = "https://github.com/megacron/megavim";
+        val = "https://gitlab.com/megacron/megavim";
       }
     ];
   };
