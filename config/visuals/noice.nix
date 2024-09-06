@@ -31,13 +31,31 @@
       mode = "n";
       key = "<leader>fm";
       action = "<cmd>lua require('noice').cmd('telescope')<CR>";
-      options.desc = "Find Messages";
+      options.desc = "Find Manual";
+    }
+    {
+      mode = "n";
+      key = "<leader>ma";
+      action = "<cmd>lua require('noice').cmd('all')<CR>";
+      options.desc = "All Messages";
     }
     {
       mode = "n";
       key = "<leader>mc";
       action = "<cmd>lua require('noice').cmd('dismiss')<CR>";
       options.desc = "Clear Messages";
+    }
+    {
+      mode = "n";
+      key = "<leader>mh";
+      action = "<cmd>lua require('noice').cmd('history')<CR>";
+      options.desc = "Message History";
+    }
+    {
+      mode = "n";
+      key = "<leader>ml";
+      action = "<cmd>lua require('noice').cmd('last')<CR>";
+      options.desc = "Last Message";
     }
   ];
 }

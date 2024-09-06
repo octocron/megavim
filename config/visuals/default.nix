@@ -5,6 +5,7 @@
     ./alpha.nix
     ./bbye.nix
     ./colorizer.nix
+    ./dressing.nix
     ./fidget.nix
     ./gitsigns.nix
     ./hardtime.nix

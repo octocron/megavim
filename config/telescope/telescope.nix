@@ -21,13 +21,13 @@
     {
       mode = "n";
       key = "<leader>fb";
-      action = "<cmd>lua require('telescope.builtin').buffers()<CR>";
+      action = "<cmd>lua require('telescope.builtin').buffers({hidden = true})<CR>";
       options.desc = "Find Buffer";
     }
     {
       mode = "n";
       key = "<leader>fc";
-      action = "<cmd>lua require('telescope.builtin').command_history<CR>";
+      action = "<cmd>lua require('telescope.builtin').command_history({hidden = true})<CR>";
       options.desc = "File Browser";
     }
     {

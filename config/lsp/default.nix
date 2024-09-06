@@ -6,6 +6,7 @@
     ./luasnip.nix
     ./nix.nix
     ./nvim-cmp.nix
+    ./trouble.nix
     ./zig.nix
   ];
 }

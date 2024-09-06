@@ -14,9 +14,15 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>la";
-      options.desc = "Lsp Code Actions";
+      key = "<leader>ca";
+      options.desc = "Code Action";
       action = "<cmd>Lspsaga code_action<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>ld";
+      options.desc = "Lsp Goto Definition";
+      action = "<cmd>Lspsaga goto_definition<CR>";
     }
     {
       mode = "n";
@@ -33,20 +39,20 @@
     {
       mode = "n";
       key = "<leader>lr";
+      options.desc = "Lsp references";
+      action = "<cmd>lua vim.lsp.buf.references()<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>lR";
       options.desc = "Lsp Rename";
       action = "<cmd>Lspsaga rename<CR>";
     }
     {
       mode = "n";
-      key = "<leader>lp";
+      key = "<leader>ls";
       options.desc = "Lsp Show Definition";
       action = "<cmd>Lspsaga peek_definition<CR>";
-    }
-    {
-      mode = "n";
-      key = "<leader>ld";
-      options.desc = "Lsp Goto Definition";
-      action = "<cmd>Lspsaga goto_definition<CR>";
     }
   ];
 }

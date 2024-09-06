@@ -1,6 +1,8 @@
 { ... }: {
   plugins.lualine = {
     enable = true;
+    theme = "molokai";
+    # "codedark", "dracula", "gruvbox", "molokai", "tokyonight"
 
     componentSeparators = {
       left = "";
