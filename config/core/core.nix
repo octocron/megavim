@@ -20,7 +20,7 @@
       confirm = true;
 
       # cursor
-      scrolloff = 8;
+      scrolloff = 2;
 
       # decrease update time
       updatetime = 200;

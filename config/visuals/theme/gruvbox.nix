@@ -3,8 +3,11 @@
     gruvbox = {
       enable = true;
       settings = {
-        true_color = true;
+        trueColor = true;
         transparent_mode = true;
+        palette_overrides = {
+          fg = "#228800";
+        };
       };
     };
   };
