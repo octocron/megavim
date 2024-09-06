@@ -13,7 +13,7 @@
       todoTelescope = {
         key = "<leader>to";
         options = {
-          desc = "Show TODOs";
+          desc = "Toggle TODOs";
         };
         keywords = [
           "BUG"

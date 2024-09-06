@@ -1,9 +1,14 @@
 :snowflake: [nixvim](https://github.com/nix-community/nixvim)
 
 > A Nix version of Neovim.
+> <nixvim> is locked to prevent breaking changes.
 ## :joystick: Commands
+> These commands are also used with spacebar menu list.
+> Just to list to make you aware of them.
 ```vim
+:ASToggle                       # toggle autosave
 :Glow                           # toggle markdown preview
+:Hardtime toggle                # toggle vim hints
 :LazyGit                        # lazy git
 :messages                       # show message history
 :Noice                          # show full message history
@@ -49,6 +54,14 @@ This input can then be used as an overlay to replace the default neovim.
       neovim = megavim.packages.${prev.system}.default;
     });
 }
+```
+
+## :magic_wand: In devShell
+```nix
+ devShells.default = nixpkgs.mkShell {
+        nativeBuildInputs = [ megavim.packages.${system}.default ];
+      };
+    };
 ```
 You can find more information on building your own flake
 [here](https://gist.github.com/siph/288b7c6b5f68a1902d28aebc95fde4c5).

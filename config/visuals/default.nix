@@ -7,14 +7,16 @@
     ./colorizer.nix
     ./fidget.nix
     ./gitsigns.nix
+    ./hardtime.nix
     ./highlight-yank.nix
     ./illuminate.nix
     ./indent-blankline.nix
     ./lastplace.nix
     ./lazygit.nix
+    #./lightbulb.nix
     ./noice.nix
     ./notify.nix
-    ./precognition.nix
+    #./precognition.nix
     ./rainbow-delimiters.nix
     ./tmux.nix
     ./toggleterm.nix

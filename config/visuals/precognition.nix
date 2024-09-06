@@ -1,4 +1,5 @@
 # :Precognition toggle
+# NOTE: not in nixvim, startVisible no working.
 { pkgs, ... }:
 {
   extraPlugins = with pkgs.vimUtils; [
@@ -14,6 +15,6 @@
     })
   ];
   extraConfigLua = ''
-    require('precognition').setup({ opts = {startVisible = false} })
+    require('precognition').setup({ opts = { startVisible = false } })
   '';
 }

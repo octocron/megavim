@@ -63,7 +63,7 @@
       {
         mode = "n";
         key = "<leader>ts";
-        action = "<cmd>lua require('autosave').toggle()<CR>";     # :ASToggle
+        action = "<cmd>ASToggle<CR>";
         options.desc = "Toggle Autosave";
       }
 
@@ -144,6 +144,20 @@
           silent = true;
         };
       }
+
+
+      # hardtime
+            {
+        mode = "n";
+        key = "<leader>th";
+        action = ":Hardtime toggle<CR>";
+        options = {
+          desc = "Toggle Hardtime";
+          silent = true;
+        };
+      }
+
+
 
       # lazygit
       {
