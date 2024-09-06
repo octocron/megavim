@@ -4,7 +4,7 @@
   imports = [
     #./base16.nix
     #./catppuccin.nix
-    ./dracula.nix
+    #./dracula.nix
     ./gruvbox.nix
     #./tokyonight.nix
     ./transparent-background.nix

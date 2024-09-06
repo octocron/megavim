@@ -37,6 +37,17 @@
             };
           };
         };
+        # NOTE: https://catppuccin.com/palette
+        color_overrides.all = {
+          text = "#ffaa00";
+          subtext0 = "#dd22ff";
+          subtext1 = "#ee4400";
+          #overlay0 = "#228800";
+          #overlay1 = "#228800";
+          #surface0 = "#228800";
+          #surface1 = "#228800";
+          #surface2 = "#228800";
+        };
       };
     };
   };
