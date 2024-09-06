@@ -147,7 +147,7 @@
 
 
       # hardtime
-            {
+      {
         mode = "n";
         key = "<leader>th";
         action = ":Hardtime toggle<CR>";
@@ -202,6 +202,22 @@
       }
 
       # todo-comments
+      {
+        mode = "n";
+        key = "<leader>tq";
+        action = "<cmd>TodoQuickFix<CR>";
+        options = {
+          desc = "Toggle Quickfixes";
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>tv";
+        action = "<cmd>TodoLocList<CR>";
+        options = {
+          desc = "Toggle Loc List";
+        };
+      }
 
       # toggleterm
       {

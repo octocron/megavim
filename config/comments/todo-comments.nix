@@ -3,8 +3,9 @@
 # HACK: oh lard
 # NOTE: did you know?
 # PERF: run good ya?
+# TEST: test this out
 # TODO: get ya when I get ya
-# WARNING: better listen up!
+# WARN: better listen up!
 {
   plugins.todo-comments = {
     enable = true;
@@ -14,6 +15,21 @@
         key = "<leader>to";
         options = {
           desc = "Toggle TODOs";
+        };
+        keywords = [
+          "BUG"
+          "DEP"
+          "FIX"
+          "HACK"
+          "NOTE"
+          "TEST"
+          "TODO"
+        ];
+      };
+      todoTrouble = {
+        key = "<leader>tu";
+        options = {
+          desc = "Toggle Troubles";
         };
         keywords = [
           "BUG"

@@ -41,7 +41,7 @@
     }
     {
       mode = "n";
-      key = "<leader>gb";
+      key = "<leader>ge";
       action = "<cmd>lua require('gitsigns').blame_line()<CR>";
       options.desc = "Git Blame";
     }

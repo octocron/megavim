@@ -18,7 +18,7 @@
 :ToggleTerm direction=float     # toggle terminal
 ```
 
-## :test_tube: How to Run
+## :nut_and_bolt: How to Run
 You can run this directly from the command line with:
 ```shell
 nix run gitlab:megacron/megavim
@@ -45,7 +45,7 @@ You can also plug this into a flake to include it into a system configuration.
 }
 ```
 
-## :flying_saucer: Overlay
+## :pushpin: Overlay
 This input can then be used as an overlay to replace the default neovim.
 ```nix
 { megavim, ... }:
@@ -56,7 +56,7 @@ This input can then be used as an overlay to replace the default neovim.
 }
 ```
 
-## :magic_wand: In devShell
+## :crystal_ball: In devShell
 ```nix
  devShells.default = nixpkgs.mkShell {
         nativeBuildInputs = [ megavim.packages.${system}.default ];
