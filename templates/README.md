@@ -15,3 +15,7 @@
 #### desired plugins but not quite working
 > (missing setting or option)
 * precognition
+
+#### Usage
+> add file to config
+> add file name to relative default.nix
