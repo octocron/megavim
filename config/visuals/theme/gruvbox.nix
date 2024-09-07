@@ -3,7 +3,8 @@
     gruvbox = {
       enable = true;
       settings = {
-        trueColor = true;
+        true_color = true;
+        terminal_colors = false;
         transparent_mode = true;
         palette_overrides = {
           fg = "#228800";

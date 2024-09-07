@@ -1,6 +1,5 @@
 {
   imports = [
-    #./aerial.nix
     ./theme
     ./alpha.nix
     ./bbye.nix
@@ -14,10 +13,8 @@
     ./indent-blankline.nix
     ./lastplace.nix
     ./lazygit.nix
-    #./lightbulb.nix
     ./noice.nix
     ./notify.nix
-    #./precognition.nix
     ./rainbow-delimiters.nix
     ./tmux.nix
     ./toggleterm.nix
