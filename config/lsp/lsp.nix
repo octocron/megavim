@@ -6,7 +6,6 @@
       servers = {
         gopls.enable = true; # go
         kotlin-language-server.enable = true; # kotlin
-        pyright.enable = true; # python
         tsserver.enable = true; # typescript
         lua-ls.enable = true; # lua
         marksman.enable = true; # markdown
