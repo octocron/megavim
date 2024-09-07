@@ -39,9 +39,9 @@ You can also plug this into a flake to include it into a system configuration.
 { inputs, system, ... }:
 {
   # NixOS
-  environment.systemPackages = [ inputs.megavim.packages.${system}.default ];
+  environment.systemPackages = [ inputs.megavim.packages.${pkgs.system}.default ];
   # home-manager
-  home.packages = [ inputs.megavim.packages.${system}.default ];
+  home.packages = [ inputs.megavim.packages.${pkgs.system}.default ];
 }
 ```
 
@@ -59,7 +59,7 @@ This input can then be used as an overlay to replace the default neovim.
 ## :crystal_ball: In devShell
 ```nix
  devShells.default = nixpkgs.mkShell {
-        nativeBuildInputs = [ megavim.packages.${system}.default ];
+        nativeBuildInputs = [ megavim.packages.${pkgs.system}.default ];
       };
     };
 ```
