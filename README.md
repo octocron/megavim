@@ -19,13 +19,14 @@
 ```
 
 ## :nut_and_bolt: How to Run
-You can run this directly from the command line with:
+> You can run this directly from the command line with:
 ```shell
 nix run gitlab:megacron/megavim
 ```
 
 ## :floppy_disk: Direct Install
-You can also plug this into a flake to include it into a system configuration.
+> You can also plug this into a flake to include it into a system configuration.
+> Make sure that neovim is UNINSTALLED!!  Otherwise megavim cannot set itself as default!
 ```nix
 # flake.nix
 {
@@ -46,7 +47,8 @@ You can also plug this into a flake to include it into a system configuration.
 ```
 
 ## :pushpin: Overlay
-This input can then be used as an overlay to replace the default neovim.
+> This input can then be used as an overlay to replace the default neovim.
+> This means that we DO install neovim, then overlay it.
 ```nix
 { megavim, ... }:
 {
@@ -63,5 +65,5 @@ This input can then be used as an overlay to replace the default neovim.
       };
     };
 ```
-You can find more information on building your own flake
+> You can find more information on building your own flake
 [here](https://gist.github.com/siph/288b7c6b5f68a1902d28aebc95fde4c5).
