@@ -1,4 +1,4 @@
-## :praying_hand: Thank You!!
+## :index_pointing_at_the_viewer: Thank You!!
 > :snowflake: [nixvim](https://github.com/nix-community/nixvim) && community!
 > :snowflake: [siph](https://github.com/siph/nixvim-flake)
 > :snowflake: [elythh](https://github.com/elythh/nixvim/tree/main)

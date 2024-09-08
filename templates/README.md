@@ -1,6 +1,6 @@
 ### Templates
 
-> This folder contains tested nix files (they work with my build)
+> This folder contains tested nix files (they work with my build  )
 > Keeping them as examples for reference
 > They just not what  I wanted to build right now
 > I didn't want to lose them, regardless.
