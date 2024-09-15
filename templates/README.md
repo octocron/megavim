@@ -12,10 +12,6 @@
 * tokyodark theme
 * vim-maximizer
 
-#### desired plugins but not quite working
-> (missing setting or option)  
-* precognitio
-
 #### future changes
 > I may swap bufferline for harpoon to try out at some point.  
 > Over time plan to widdle this config down to least plugins as possible.  

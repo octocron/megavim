@@ -13,6 +13,7 @@
     ./indent-blankline.nix
     ./lastplace.nix
     ./lazygit.nix
+    ./markview.nix
     ./noice.nix
     ./notify.nix
     ./precognition.nix
