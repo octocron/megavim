@@ -15,6 +15,7 @@
     ./lazygit.nix
     ./noice.nix
     ./notify.nix
+    ./precognition.nix
     ./rainbow-delimiters.nix
     ./tmux.nix
     ./toggleterm.nix

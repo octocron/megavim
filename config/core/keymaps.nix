@@ -157,7 +157,17 @@
         };
       }
 
-
+      # BUG: commands are not working at all for this plugin, not even :illuminateToggle
+      # illuminate
+      {
+        mode = "n";
+        key = "<leader>ti";
+        action = "<cmd>lua require('illuminate').toggle<CR>";
+        options = {
+          desc = "Toggle Illuminate";
+          silent = true;
+        };
+      }
 
       # lazygit
       {
@@ -197,7 +207,7 @@
         key = "<leader>tp";
         action = "<cmd>Precognition toggle<CR>";
         options = {
-          desc = "Toggle Vim Indicators";
+          desc = "Toggle Precognition";
         };
       }
 

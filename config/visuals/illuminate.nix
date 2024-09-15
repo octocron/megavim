@@ -1,12 +1,23 @@
 {
   plugins.illuminate = {
     enable = true;
+    underCursor = true;
     minCountToHighlight = 2;
+    filetypesDenylist = [
+      "alpha"
+      "harpoon"
+      "TelescopePrompt"
+    ];
+    providers = [
+      "lsp"
+      "treesitter"
+      "regex"
+    ];
   };
 
   highlight = {
-    IlluminatedWordText.underline = true;
-    IlluminatedWordRead.underline = true;
-    IlluminatedWordWrite.underline = true;
+    IlluminatdWordText.underline = true;
+    IlluminatdWordRead.underline = true;
+    IlluminatdWordWrite.underline = true;
   };
 }
