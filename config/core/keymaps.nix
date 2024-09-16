@@ -100,39 +100,39 @@
       }
 
       # codeium
-      {
-        mode = "i";
-        key = "<c-c>";
-        action = "<cmd>lua require('codeium-vim.builtin').codeium#Accept<CR>";
-        options = {
-          expr = true;
-          silent = true;
-        };
-      }
-      {
-        mode = "i";
-        key = "<c-x>";
-        action = "<cmd>lua require('codeium-vim.builtin').codeium#Clear<CR>";
-        options = {
-          expr = true;
-          silent = true;
-        };
-      }
-      {
-        mode = "n";
-        key = "<leader>ta";
-        action = "<cmd>Codeium Auth<CR>";
-        options.desc = "Authorize Codeium";
-      }
-      {
-        mode = "n";
-        key = "<leader>tc";
-        action = "<cmd>Codeium Chat<CR>";
-        options = {
-          desc = "Chat Codeium";
-          silent = true;
-        };
-      }
+      #{
+      #  mode = "i";
+      #  key = "<c-c>";
+      #  action = "<cmd>lua require('codeium-vim.builtin').codeium#Accept<CR>";
+      #  options = {
+      #    expr = true;
+      #    silent = true;
+      #  };
+      #}
+      #{
+      #  mode = "i";
+      #  key = "<c-x>";
+      #  action = "<cmd>lua require('codeium-vim.builtin').codeium#Clear<CR>";
+      #  options = {
+      #    expr = true;
+      #    silent = true;
+      #  };
+      #}
+      #{
+      #  mode = "n";
+      #  key = "<leader>ta";
+      #  action = "<cmd>Codeium Auth<CR>";
+      #  options.desc = "Authorize Codeium";
+      #}
+      #{
+      #  mode = "n";
+      #  key = "<leader>tc";
+      #  action = "<cmd>Codeium Chat<CR>";
+      #  options = {
+      #    desc = "Chat Codeium";
+      #    silent = true;
+      #  };
+      #}
 
       # glow
       {
@@ -176,6 +176,71 @@
         action = "<cmd>LazyGit<CR>";
         options = {
           desc = "Toggle LazyGit";
+        };
+      }
+
+      # markview
+      {
+        mode = "n";
+        key = "<leader>pt";
+        action = "<cmd>Markview toggle<CR>";
+        options = {
+          desc = "Toggle Markview";
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>pa";
+        action = "<cmd>Markview toggleAll<CR>";
+        options = {
+          desc = "Toggle All Markview";
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>pd";
+        action = "<cmd>Markview disable<CR>";
+        options = {
+          desc = "Disable Markview";
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>pc";
+        action = "<cmd>Markview disableAll<CR>";
+        options = {
+          desc = "Disable All Markview";
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>pe";
+        action = "<cmd>Markview enable<CR>";
+        options = {
+          desc = "Enable Markview";
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>pf";
+        action = "<cmd>Markview enableAll<CR>";
+        options = {
+          desc = "Enable All Markview";
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>ps";
+        action = "<cmd>Markview splitToggle<CR>";
+        options = {
+          desc = "Split Toggle Markview";
+          silent = true;
         };
       }
 
