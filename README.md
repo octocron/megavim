@@ -1,16 +1,15 @@
 ## :punch: Thank You!!
-> :snowflake: [nixvim](https://github.com/nix-community/nixvim) && community!  
-> :snowflake: [siph](https://github.com/siph/nixvim-flake)  
-> :snowflake: [elythh](https://github.com/elythh/nixvim/tree/main)  
-> :snowflake: [gwg313](https://github.com/gwg313/nvim-nix/tree/main/config)  
-> :snowflake: [MikaelFangel](https://github.com/MikaelFangel/nixvim-config/blob/main/README.md)  
-> :snowflake: [solid-sinusoid](https://github.com/solid-sinusoid/nixvim-config/tree/main)  
+> * :snowflake: [nixvim](https://github.com/nix-community/nixvim) && community!  
+> * :snowflake: [siph](https://github.com/siph/nixvim-flake)  
+> * :snowflake: [elythh](https://github.com/elythh/nixvim/tree/main)  
+> * :snowflake: [gwg313](https://github.com/gwg313/nvim-nix/tree/main/config)  
+> * :snowflake: [MikaelFangel](https://github.com/MikaelFangel/nixvim-config/blob/main/README.md)  
+> * :snowflake: [solid-sinusoid](https://github.com/solid-sinusoid/nixvim-config/tree/main)  
 
 ## :book: Resources
 > [RTFM](https://nix-community.github.io/nixvim/)  
 > [NüschtOS](https://nix-community.github.io/nixvim/search/)  
 > [NVIM Options](https://neovim.io/doc/user/options.html#)  
-
 
 > A Nix version of Neovim.  
 > <nixvim> is locked to prevent breaking changes.  
@@ -18,7 +17,6 @@
 > These commands are also used with spacebar menu list.  
 > Just to list to make you aware of them.  
 ```vim
-:ASToggle                       # toggle autosave
 :Glow                           # toggle markdown preview
 :Hardtime toggle                # toggle vim hints
 :LazyGit                        # lazy git
