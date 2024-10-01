@@ -8,6 +8,7 @@ return {
     config = function()
       require("mason").setup()
     end,
+    build = ":MasonUpdate",
   },
   -- INFO: bridge for mason with lspconfig plugin by installing servers on your system
   {
