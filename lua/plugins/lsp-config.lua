@@ -12,6 +12,11 @@ return {
   -- INFO: bridge for mason with lspconfig plugin by installing servers on your system
   {
     "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require("mason-lspconfig").setup({
+        automatic_installation = true,
+      })
+    end,
     lazy = false,
     opts = {
       auto_install = true,
