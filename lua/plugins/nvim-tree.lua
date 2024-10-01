@@ -35,9 +35,7 @@ return {
           },
         },
       },
-      -- disable window_picker for
-      -- explorer to work well with
-      -- window splits
+      -- disable window_picker for explorer to work with window splits
       actions = {
         open_file = {
           window_picker = {
