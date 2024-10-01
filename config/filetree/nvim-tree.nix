@@ -1,12 +1,19 @@
 {
   plugins.nvim-tree = {
     enable = true;
+    actions = {
+      windowPicker = {
+        enable = false;
+      };
+    };
+    diagnostics.enable = true;
+    filters = {
+      custom = [ ".DS_Store" ]; # <leader>ef
+    };
     git = {
       enable = true; # git integrate with icons and colors
       ignore = false; # files in .gitignore would be ignored by tree
     };
-    diagnostics.enable = true;
-    updateFocusedFile.enable = true;
     modified.enable = true;
     renderer = {
       indentWidth = 1;
@@ -21,8 +28,9 @@
         };
       };
     };
+    updateFocusedFile.enable = true;
     view = {
-      width = 30;
+      width = 38;
       side = "left";
       float.enable = false;
       relativenumber = true;
@@ -47,6 +55,12 @@
       key = "<leader>ee";
       action = "<cmd>lua require('nvim-tree.api').tree.toggle()<CR>";
       options.desc = "Toggle Tree";
+    }
+    {
+      mode = "n";
+      key = "<leader>ef";
+      action = "<cmd>lua require('nvim-tree.api').tree.toggle_custom()<CR>";
+      options.desc = "Toggle Filter";
     }
   ];
 }
