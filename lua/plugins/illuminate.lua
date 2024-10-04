@@ -19,8 +19,5 @@ return {
       },
       under_cursor = true,
     })
-    vim.cmd([[hi def IlluminatedWordText cterm=underline gui=undercurl]])
-    vim.cmd([[hi def IlluminatedWordRead  cterm=underline gui=undercurl]])
-    vim.cmd([[hi def IlluminatedWordWrite cterm=underline gui=undercurl]])
   end,
 }

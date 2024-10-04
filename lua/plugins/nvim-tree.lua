@@ -11,10 +11,6 @@ return {
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
-    -- change color for arrows
-    vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#EE4400 ]])
-    vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#228800 ]])
-
     -- configure nvim-tree
     nvimtree.setup({
       view = {
