@@ -4,17 +4,14 @@
 return {
   "RRethy/vim-illuminate",
   config = function()
-    require("illuminate").setup({
-      delay = 200,
+    require("illuminate").configure({
+      delay = 100,
       filetypes_denylist = {
         "alpha",
         "harpoon",
-        "toggleterm",
-        "NvimTree",
         "TelescopePrompt",
-        "TelescopeResults",
       },
-      min_count_to_highlight = 1,
+      min_count_to_highlight = 2,
       providers = {
         "lsp",
         "treesitter",
@@ -22,5 +19,8 @@ return {
       },
       under_cursor = true,
     })
+    vim.cmd([[hi def IlluminatedWordText cterm=underline gui=undercurl]])
+    vim.cmd([[hi def IlluminatedWordRead  cterm=underline gui=undercurl]])
+    vim.cmd([[hi def IlluminatedWordWrite cterm=underline gui=undercurl]])
   end,
 }
