@@ -3,7 +3,7 @@
     enable = true;
     actions = {
       windowPicker = {
-        enable = false;
+        enable = true;
       };
     };
     diagnostics.enable = true;
@@ -14,7 +14,7 @@
       enable = true; # git integrate with icons and colors
       ignore = false; # files in .gitignore would be ignored by tree
     };
-    modified.enable = true;
+    modified.enable = true;   # show unsaved files
     renderer = {
       indentWidth = 1;
       indentMarkers = {
