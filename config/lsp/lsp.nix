@@ -6,13 +6,13 @@
       servers = {
         gopls.enable = true; # go
         kotlin-language-server.enable = true; # kotlin
-        tsserver.enable = true; # typescript
         lua-ls.enable = true; # lua
         marksman.enable = true; # markdown
         nil-ls.enable = true; # nix
         jsonls.enable = true; # json
         nushell.enable = true; # nushell
         pylsp.enable = true; # python
+        taplo.enable = true; # toml
         terraformls.enable = true; # terraform
         yamlls.enable = true; # yaml
       };
@@ -67,7 +67,6 @@
           yamllint.enable = true;
         };
         formatting = {
-          nixpkgs_fmt.enable = true;
           black = {
             enable = true;
             settings = ''
@@ -76,6 +75,8 @@
               }
             '';
           };
+          nixpkgs_fmt.enable = true;
+          prettierd.enable = true;
           stylua.enable = true;
           yamlfmt.enable = true;
         };
