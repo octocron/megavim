@@ -1,5 +1,5 @@
 {
-  plugins.vim-surround = {
+  plugins.web-devicons = {
     enable = true;
   };
 }

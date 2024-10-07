@@ -7,7 +7,7 @@
     ./dressing.nix
     ./fidget.nix
     ./gitsigns.nix
-    ./hardtime.nix
+    #./hardtime.nix
     ./highlight-yank.nix
     ./illuminate.nix
     ./indent-blankline.nix
@@ -20,6 +20,7 @@
     ./tmux.nix
     ./toggleterm.nix
     ./undotree.nix
+    ./web-devicons.nix
     ./which-key.nix
     ./wilder.nix
   ];

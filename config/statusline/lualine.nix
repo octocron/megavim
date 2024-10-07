@@ -1,92 +1,106 @@
 { ... }: {
   plugins.lualine = {
     enable = true;
-    theme = "molokai";
-    # "codedark", "dracula", "gruvbox", "molokai", "tokyonight"
+    settings = {
+      options = {
+        icons_enabled = true;
+        globalstatus = true;
+        disabled_filetypes = {
+          statusline = [
+            "dashboard"
+            "alpha"
+            "starter"
+          ];
+        };
 
-    componentSeparators = {
-      left = "";
-      right = "";
-    };
+        theme = "molokai";
+        # "codedark", "dracula", "gruvbox", "molokai", "tokyonight"
 
-    sectionSeparators = {
-      left = "";
-      right = "";
-    };
+        componentSeparators = {
+          left = "";
+          right = "";
+        };
 
-    sections = {
-      lualine_a = [
-        {
-          name = "mode";
-          icon = "";
-          separator = {
-            left = "";
-            right = "";
-          };
-        }
-      ];
-      lualine_b = [
-        {
-          name = "branch";
-          icon = "";
-          separator = {
-            left = "";
-            right = "";
-          };
-        }
-      ];
-      lualine_c = [
-        {
-          name = "diagnostic";
-          extraConfig = {
-            symbols = {
-              error = " ";
-              warn = " ";
-              info = " ";
-              hint = "󰝶 ";
+        sectionSeparators = {
+          left = "";
+          right = "";
+        };
+      };
+
+      sections = {
+        lualine_a = [
+          {
+            __unkeyed-1 = "mode";
+            icon = "";
+            separator = {
+              left = "";
+              right = "";
             };
-          };
-        }
-        {
-          name = "filetype";
-          separator = {
-            left = "";
-            right = "";
-          };
-          extraConfig = {
-            icon_only = true;
-            padding = {
-              left = 1;
-              right = 0;
+          }
+        ];
+        lualine_b = [
+          {
+            __unkeyed-1 = "branch";
+            icon = "";
+            separator = {
+              left = "";
+              right = "";
             };
-          };
-        }
-        {
-          name = "filename";
-          extraConfig = {
-            path = 1;
-            symbols = {
-              modified = "  ";
-              readonly = "";
-              unnamed = "";
+          }
+        ];
+        lualine_c = [
+          {
+            __unkeyed-1 = "diagnostic";
+            _raw = ''{
+              symbols = {
+                error = " ";
+                warn = " ";
+                info = " ";
+                hint = "󰝶 ";
+              };
+            }'';
+          }
+          {
+            __unkeyed-2 = "filetype";
+            separator = {
+              left = "";
+              right = "";
             };
-          };
-        }
-      ];
-      lualine_x = [
-        "diff"
-      ];
-      lualine_y = [
-        {
-          name = "progress";
-          icon = "";
-        }
-      ];
-      lualine_z = [
-        {
-          name = "location";
-        }
-      ];
+            _raw = ''{
+              icon_only = true;
+              padding = {
+                left = 1;
+                right = 0;
+              };
+            }'';
+          }
+          {
+            __unkeyed-3 = "filename";
+            _raw = ''{
+              path = 1;
+              symbols = {
+                modified = "  ";
+                readonly = "";
+                unnamed = "";
+              };
+            }'';
+          }
+        ];
+        lualine_x = [
+          "diff"
+        ];
+        lualine_y = [
+          {
+            __unkeyed-1 = "progress";
+            icon = "";
+          }
+        ];
+        lualine_z = [
+          {
+            __unkeyed-1 = "location";
+          }
+        ];
+      };
     };
   };
 }
