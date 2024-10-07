@@ -7,7 +7,7 @@
     ./dressing.nix
     ./fidget.nix
     ./gitsigns.nix
-    #./hardtime.nix
+    ./hardtime.nix
     ./highlight-yank.nix
     ./illuminate.nix
     ./indent-blankline.nix
