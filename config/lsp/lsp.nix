@@ -5,10 +5,10 @@
 
       servers = {
         gopls.enable = true; # go
-        kotlin-language-server.enable = true; # kotlin
-        lua-ls.enable = true; # lua
+        kotlin_language_server.enable = true; # kotlin
+        lua_ls.enable = true; # lua
         marksman.enable = true; # markdown
-        nil-ls.enable = true; # nix
+        nil_ls.enable = true; # nix
         jsonls.enable = true; # json
         nushell.enable = true; # nushell
         pylsp.enable = true; # python
