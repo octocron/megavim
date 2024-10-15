@@ -29,6 +29,7 @@
       # decorators
       list = true;
       listchars = "trail:●,nbsp:+,tab:→ ,extends:▸,precedes:◂";
+      fillchars = "eob:\ ,";
 
       # folding
       foldenable = false;

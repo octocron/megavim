@@ -4,7 +4,7 @@
     settings = {
       options = {
         numbers = "none";
-        separatorStyle = "slope";
+        separatorStyle = "slope";   # INFO: "none" "padded_slant" "padded_slope" "slant" "slope" "thick" "thin"
         diagnostics = "nvim_lsp";
 
         offsets = [
