@@ -59,6 +59,7 @@ o.textwidth = 300
 -- decorators
 o.list = true
 o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
+o.fillchars = "eob: "
 
 -- better completion experience
 opt.completeopt = { "menuone", "noselect" }
