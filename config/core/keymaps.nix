@@ -100,39 +100,39 @@
       }
 
       # codeium
-      #{
-      #  mode = "i";
-      #  key = "<c-c>";
-      #  action = "<cmd>lua require('codeium-vim.builtin').codeium#Accept<CR>";
-      #  options = {
-      #    expr = true;
-      #    silent = true;
-      #  };
-      #}
-      #{
-      #  mode = "i";
-      #  key = "<c-x>";
-      #  action = "<cmd>lua require('codeium-vim.builtin').codeium#Clear<CR>";
-      #  options = {
-      #    expr = true;
-      #    silent = true;
-      #  };
-      #}
-      #{
-      #  mode = "n";
-      #  key = "<leader>ta";
-      #  action = "<cmd>Codeium Auth<CR>";
-      #  options.desc = "Authorize Codeium";
-      #}
-      #{
-      #  mode = "n";
-      #  key = "<leader>tc";
-      #  action = "<cmd>Codeium Chat<CR>";
-      #  options = {
-      #    desc = "Chat Codeium";
-      #    silent = true;
-      #  };
-      #}
+      {
+        mode = "i";
+        key = "<c-c>";
+        action = "<cmd>lua require('codeium-vim.builtin').codeium#Accept<CR>";
+        options = {
+          expr = true;
+          silent = true;
+        };
+      }
+      {
+        mode = "i";
+        key = "<c-x>";
+        action = "<cmd>lua require('codeium-vim.builtin').codeium#Clear<CR>";
+        options = {
+          expr = true;
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>cz";
+        action = "<cmd>Codeium Auth<CR>";
+        options.desc = "Authorize Codeium";
+      }
+      {
+        mode = "n";
+        key = "<leader>tc";
+        action = "<cmd>Codeium Chat<CR>";
+        options = {
+          desc = "Chat Codeium";
+          silent = true;
+        };
+      }
 
       # glow
       {

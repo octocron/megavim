@@ -33,6 +33,7 @@
 
       perSystem = { system, pkgs, self', lib, ... }:
         let
+        pkgs = import nixpkgs { system = "${system}"; config.allowUnfree = true; };
         nixvim' = nixvim.legacyPackages.${system};
 
         nvim = nixvim'.makeNixvimWithModule {
