@@ -18,27 +18,23 @@
         };
         keywords = [
           "BUG"
-          "DEP"
           "FIX"
-          "HACK"
-          "NOTE"
           "TEST"
           "TODO"
+          "WARN"
         ];
       };
       todoTrouble = {
-        key = "<leader>tu";
+        key = "<leader>tr";
         options = {
           desc = "Toggle Troubles";
         };
         keywords = [
           "BUG"
-          "DEP"
           "FIX"
-          "HACK"
-          "NOTE"
           "TEST"
           "TODO"
+          "WARN"
         ];
       };
     };

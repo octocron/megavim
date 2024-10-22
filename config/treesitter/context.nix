@@ -4,9 +4,9 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>tr";
+      key = "<leader>tc";
       action = "<cmd>TSContextToggle<CR>";
-      options.desc = "Toggle treesitter context";
+      options.desc = "Toggle Context";
     }
   ];
 }

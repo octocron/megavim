@@ -20,6 +20,8 @@
         action = "<cmd>w<CR>";
         options.desc = "Save Current Buffer";
       }
+
+      # INFO: Vim Motions
       {
         mode = "n";
         key = "<C-h>";
@@ -39,6 +41,20 @@
         mode = "n";
         key = "<C-l>";
         action = "<C-w>l";
+      }
+
+      # INFO: Keymaps
+      {
+        mode = "n";
+        key = "<leader>kk";
+        action = "<cmd>:Telescope keymaps<CR>";
+        options.desc = "Keymaps";
+      }
+      {
+        mode = "n";
+        key = "<leader>kg";
+        action = "<cmd>:h holy-grail<CR>";
+        options.desc = "Holy Grail";
       }
 
       # INFO: Aerial
@@ -227,18 +243,6 @@
         action = ":Hardtime toggle<CR>";
         options = {
           desc = "Toggle Hardtime";
-          silent = true;
-        };
-      }
-
-      # BUG: commands are not working at all for this plugin, not even :illuminateToggle
-      # INFO: Illuminate
-      {
-        mode = "n";
-        key = "<leader>ti";
-        action = "<cmd>lua require('illuminate').toggle<CR>";
-        options = {
-          desc = "Toggle Illuminate";
           silent = true;
         };
       }
