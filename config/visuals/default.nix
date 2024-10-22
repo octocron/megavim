@@ -19,6 +19,7 @@
     ./rainbow-delimiters.nix
     ./tmux.nix
     ./toggleterm.nix
+    ./transparent.nix
     ./undotree.nix
     ./web-devicons.nix
     ./which-key.nix

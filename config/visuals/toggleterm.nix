@@ -1,4 +1,5 @@
-# :ToggleTerm size=40 dir=~/Desktop direction=horizontal name=desktop
+# INFO: :ToggleTerm size=40 dir=~/Desktop direction=horizontal name=desktop
+
 {
   plugins.toggleterm = {
     enable = true;

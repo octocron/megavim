@@ -1,3 +1,5 @@
+# FIX: loads on left overlapping nvimtree
+
 {
   plugins.undotree = {
     enable = true;

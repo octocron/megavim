@@ -1,5 +1,5 @@
-{pkgs, ...}: {
-  extraPlugins = with pkgs; [vimPlugins.transparent-nvim];
+{ pkgs, ... }: {
+  extraPlugins = with pkgs; [ vimPlugins.transparent-nvim ];
 
   extraConfigLua = ''
     vim.g.transparent_groups = vim.list_extend(

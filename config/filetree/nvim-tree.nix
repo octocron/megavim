@@ -62,5 +62,11 @@
       action = "<cmd>lua require('nvim-tree.api').tree.toggle_custom()<CR>";
       options.desc = "Toggle Filter";
     }
+    {
+      mode = "n";
+      key = "<c-v>";
+      action = "<cmd>lua require('nvim-tree.api').node.open.vertical()<CR>";
+      options.desc = "Open Vertical";
+    }
   ];
 }

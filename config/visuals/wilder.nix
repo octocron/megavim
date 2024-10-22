@@ -1,4 +1,4 @@
-# gives context menu for modes
+# INFO: Gives context menu for modes
 {
   plugins.wilder = {
     enable = true;

@@ -1,7 +1,7 @@
 {
   config = {
     keymaps = [
-      # core
+      # INFO: core
       {
         mode = "n";
         key = "<leader>q";
@@ -41,7 +41,7 @@
         action = "<C-w>l";
       }
 
-      # aerial
+      # INFO: Aerial
       #{
       #  mode = "n";
       #  key = "<c-{>";
@@ -59,7 +59,7 @@
       #  options.desc = "Aerial Toggle";
       #}
 
-      # autosave
+      # INFO: Autosave
       {
         mode = "n";
         key = "<leader>ts";
@@ -67,7 +67,7 @@
         options.desc = "Toggle Autosave";
       }
 
-      # bufferline
+      # INFO: Bufferline
       {
         mode = "n";
         key = "<A-l>";
@@ -99,7 +99,7 @@
         };
       }
 
-      # codeium
+      # INFO: Codeium
       {
         mode = "i";
         key = "<c-c>";
@@ -134,7 +134,81 @@
         };
       }
 
-      # glow
+      # INFO: Comment Box
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cba";
+        action = "<cmd>CBlabox10<CR>";
+        options = {
+          desc = "Comment Box ASCII";
+        };
+      }
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cbb";
+        action = "<cmd>CBlabox<CR>";
+        options = {
+          desc = "Comment Box";
+        };
+      }
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cbd";
+        action = "<cmd>CBd<CR>";
+        options = {
+          desc = "Comment Box Delete";
+        };
+      }
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cbh";
+        action = "<cmd>CBlabox5<CR>";
+        options = {
+          desc = "Comment Box Dashed Heavy";
+        };
+      }
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cbl";
+        action = "<cmd>CBllline<CR>";
+        options = {
+          desc = "Comment Line";
+        };
+      }
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cbr";
+        action = "<cmd>CBllline7<CR>";
+        options = {
+          desc = "Comment Line Rounded";
+        };
+      }
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cbt";
+        action = "<cmd>CBccbox<CR>";
+        options = {
+          desc = "Comment Box Title";
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>cbs";
+        action = "<cmd>CBcatalog<CR>";
+        options = {
+          desc = "Comment Styles";
+        };
+      }
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>cby";
+        action = "<cmd>CBy<CR>";
+        options = {
+          desc = "Comment Box Yank Text";
+        };
+      }
+
+      # INFO: Glow
       {
         mode = "n";
         key = "<leader>tg";
@@ -146,7 +220,7 @@
       }
 
 
-      # hardtime
+      # INFO: Hardtime
       {
         mode = "n";
         key = "<leader>th";
@@ -158,7 +232,7 @@
       }
 
       # BUG: commands are not working at all for this plugin, not even :illuminateToggle
-      # illuminate
+      # INFO: Illuminate
       {
         mode = "n";
         key = "<leader>ti";
@@ -169,7 +243,7 @@
         };
       }
 
-      # lazygit
+      # INFO: Lazygit
       {
         mode = "n";
         key = "<leader>tl";
@@ -179,7 +253,7 @@
         };
       }
 
-      # none-ls
+      # INFO: None-ls
       {
         mode = [
           "n"
@@ -193,7 +267,7 @@
         };
       }
 
-      # precognition
+      # INFO: Precognition
       {
         mode = "n";
         key = "<leader>pp";
@@ -211,7 +285,7 @@
         };
       }
 
-      # todo-comments
+      # INFO: todo-comments
       {
         mode = "n";
         key = "<leader>tq";
@@ -229,13 +303,24 @@
         };
       }
 
-      # toggleterm
+      # INFO: toggleterm
       {
         mode = "n";
         key = "<leader>tt";
         action = ":ToggleTerm<CR>";
         options = {
           desc = "Toggle Terminal";
+          silent = true;
+        };
+      }
+
+      # INFO: Transparent
+      {
+        mode = "n";
+        key = "<leader>pt";
+        action = ":TransparentToggle<CR>";
+        options = {
+          desc = "Toggle Transparent";
           silent = true;
         };
       }

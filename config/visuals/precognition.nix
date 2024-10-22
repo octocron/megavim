@@ -1,4 +1,4 @@
-# :Precognition toggle
+# NOTE: :Precognition toggle
 { pkgs, ... }:
 {
   extraPlugins = with pkgs.vimUtils; [
