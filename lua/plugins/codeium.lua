@@ -19,6 +19,6 @@ return {
 		end, { expr = true, silent = true })
 	end,
 	keys = {
-		{ "<leader>sd", "<cmd>Codeium Auth<cr>", desc = "Codium Auth" },
+		{ "<leader>sd", "<cmd>Codeium Auth<cz>", desc = "Codium Auth" },
 	},
 }
