@@ -76,7 +76,7 @@
             '';
           };
           goimports.enable = true;
-          alejandra.enable = true;
+          nixpkgs_fmt.enable = true;
           prettierd.enable = true;
           stylua.enable = true;
           yamlfmt.enable = true;
