@@ -1,14 +1,35 @@
 {
   plugins.lspsaga = {
     enable = true;
+    codeAction = {
+      showServerName = true;
+    };
+
+    diagnostic = {
+      showCodeAction = true;
+      borderFollow = true;
+      textHlFollow = true;
+    };
 
     lightbulb = {
       enable = true;
+      sign = true;
       virtualText = false;
     };
 
-    symbolInWinbar.enable = false;
-    ui.border = "rounded";
+    outline = {
+      winPosition = "right";
+      winWidth = 40;
+    };
+
+    symbolInWinbar = {
+      enable = true;
+    };
+
+    ui = {
+      border = "rounded";
+      devicon = true;
+    };
   };
 
   keymaps = [
@@ -53,6 +74,12 @@
       key = "<leader>ls";
       options.desc = "Lsp Show Definition";
       action = "<cmd>Lspsaga peek_definition<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>lt";
+      options.desc = "Lsp Show Type Definition";
+      action = "<cmd>Lspsaga peek_type_definition<CR>";
     }
   ];
 }

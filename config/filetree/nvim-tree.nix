@@ -8,13 +8,13 @@
     };
     diagnostics.enable = true;
     filters = {
-      custom = [ ".DS_Store" ]; # <leader>ef
+      custom = [".DS_Store"]; # <leader>ef
     };
     git = {
       enable = true; # git integrate with icons and colors
       ignore = false; # files in .gitignore would be ignored by tree
     };
-    modified.enable = true;   # show unsaved files
+    modified.enable = true; # show unsaved files
     renderer = {
       indentWidth = 1;
       indentMarkers = {
