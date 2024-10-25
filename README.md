@@ -7,6 +7,11 @@
 > - :snowflake: [MikaelFangel](https://github.com/MikaelFangel/nixvim-config/blob/main/README.md)
 > - :snowflake: [solid-sinusoid](https://github.com/solid-sinusoid/nixvim-config/tree/main)
 
+## :picture: Preview
+![](png/megavim1.png)  
+![](png/megavim2.png)  
+![](png/megavim3.png)  
+
 ## :book: Resources
 
 > [RTFM](https://nix-community.github.io/nixvim/)  
