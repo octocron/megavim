@@ -29,7 +29,7 @@
 > Keep context for deeply nested code.
 
 > A Nix version of Neovim.  
-> <nixvim> is locked to prevent breaking changes.
+> Nixvim input is locked to prevent breaking changes.
 
 ## :joystick: Commands
 
