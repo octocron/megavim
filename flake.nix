@@ -31,17 +31,24 @@
         "x86_64-darwin"
       ];
 
-      perSystem = { system, pkgs, self', lib, ... }:
-        let
-        pkgs = import nixpkgs { system = "${system}"; config.allowUnfree = true; };
+      perSystem = {
+        system,
+        pkgs,
+        self',
+        lib,
+        ...
+      }: let
+        pkgs = import nixpkgs {
+          system = "${system}";
+          config.allowUnfree = true;
+        };
         nixvim' = nixvim.legacyPackages.${system};
 
         nvim = nixvim'.makeNixvimWithModule {
           inherit pkgs;
           module = ./config;
         };
-      in
-        {
+      in {
         checks = {
           pre-commit-check = pre-commit-hooks.lib.${system}.run {
             src = ./.;
