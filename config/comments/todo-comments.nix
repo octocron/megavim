@@ -1,10 +1,11 @@
 # BUG: huh, what the?
 # FIX: better get on it
-# HACK: oh lard
 # NOTE: did you know?
-# PERF: run good ya?
+# INFO: learnin ya good
 # TEST: test this out
+# PERF: run good ya?
 # TODO: get ya when I get ya
+# HACK: oh lard
 # WARN: better listen up!
 {
   plugins.todo-comments = {
@@ -40,4 +41,3 @@
     };
   };
 }
-

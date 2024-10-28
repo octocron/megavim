@@ -1,4 +1,4 @@
-{ ... }: {
+_: {
   colorschemes = {
     dracula-nvim = {
       enable = true;
@@ -16,4 +16,3 @@
     };
   };
 }
-

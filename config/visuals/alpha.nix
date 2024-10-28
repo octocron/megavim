@@ -23,7 +23,7 @@
         "            ▀█▌▐█████▌▐█▀                "
         "               ███████                   "
         ""
-        "           megavim by megacron           "
+        "         megavim by megacron             "
 
       ];
     in
