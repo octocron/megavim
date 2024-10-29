@@ -8,9 +8,10 @@
 > - :snowflake: [solid-sinusoid](https://github.com/solid-sinusoid/nixvim-config/tree/main)
 
 ## :city_sunset: Preview
+
 ![](png/megavim1.png)  
 ![](png/megavim2.png)  
-![](png/megavim3.png)  
+![](png/megavim3.png)
 
 ## :book: Resources
 
@@ -55,11 +56,10 @@ nix run gitlab:megacron/megavim
 > Make sure that neovim is UNINSTALLED!! Otherwise megavim cannot set itself as default!
 
 ```nix
-# flake.nix need commitHash in order to guarantee proper build so be sure to paste in latest commit
+# flake.nix use with ref to ensure it pulls from the correct branch with latest.
 {
   inputs = {
-    # without commitHashLatest megavim would build from flake source instead of its own
-    megavim.url = "gitlab:megacron/megavim?rev=commitHashLatest";
+    megavim.url = "gitlab:megacron/megavim?ref=nixvim";
   };
 }
 ```
