@@ -83,19 +83,18 @@ nix run gitlab:megacron/megavim
 ```nix
 { megavim, ... }:
 {
-    overlays = (final: prev: {
-      neovim = megavim.packages.${prev.system}.default;
-    });
+  overlays = (final: prev: {
+    neovim = megavim.packages.${prev.system}.default;
+  });
 }
 ```
 
 ## :crystal_ball: In devShell
 
 ```nix
- devShells.default = nixpkgs.mkShell {
-        nativeBuildInputs = [ megavim.packages.${pkgs.system}.default ];
-      };
-    };
+devShells.default = nixpkgs.mkShell {
+  nativeBuildInputs = [ megavim.packages.${pkgs.system}.default ];
+};
 ```
 
 > You can find more information on building your own flake  
