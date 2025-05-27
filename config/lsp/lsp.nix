@@ -28,7 +28,6 @@
 
     rustaceanvim = {
       enable = true;
-      rustAnalyzerPackage = null;
 
       server = {
         # EOL inlays when?
@@ -43,12 +42,6 @@
       settings = {
         RustaceanToolOpts.enable_clippy = true;
       };
-    };
-
-    nvim-jdtls = {
-      enable = true;
-      # sneak into `.idea` project folder
-      data = ".idea/nvim-jdtls";
     };
 
     none-ls = {

@@ -1,6 +1,6 @@
 # show color or hexcolors
 {
-  plugins.nvim-colorizer = {
+  plugins.colorizer = {
     enable = true;
   };
 }

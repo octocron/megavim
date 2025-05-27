@@ -1,6 +1,8 @@
 {
   plugins.notify = {
     enable = true;
-    backgroundColour = "#000000";
+    settings = {
+      backgroundColour = "#000000";
+    };
   };
 }
