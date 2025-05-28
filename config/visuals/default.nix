@@ -1,6 +1,7 @@
 {
   imports = [
     ./theme
+    ./aerial.nix
     ./alpha.nix
     ./bbye.nix
     ./colorizer.nix
