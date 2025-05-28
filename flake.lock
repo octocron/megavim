@@ -173,6 +173,7 @@
       "original": {
         "owner": "nix-community",
         "repo": "nixvim",
+        "rev": "65b1bffd3d36e9392083c6efcf2e087921afa86e",
         "type": "github"
       }
     },
