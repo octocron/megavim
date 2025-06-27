@@ -2,7 +2,7 @@
   plugins.notify = {
     enable = true;
     settings = {
-      backgroundColour = "#000000";
+      background_colour = "#000000";
     };
   };
 }
