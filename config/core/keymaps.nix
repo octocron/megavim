@@ -20,7 +20,15 @@
         action = "<cmd>w<CR>";
         options.desc = "Save Current Buffer";
       }
-
+      {
+        mode = "n";
+        key = "<Leader>v";
+        action = "<C-v>";
+        options = {
+          desc = "Enter Visual Block Mode";
+          silent = true;
+        };
+      }
       # INFO: Vim Motions
       {
         mode = "n";
@@ -152,7 +160,10 @@
 
       # INFO: Comment Box
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cba";
         action = "<cmd>CBlabox10<CR>";
         options = {
@@ -160,7 +171,10 @@
         };
       }
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cbb";
         action = "<cmd>CBlabox<CR>";
         options = {
@@ -168,7 +182,10 @@
         };
       }
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cbd";
         action = "<cmd>CBd<CR>";
         options = {
@@ -176,7 +193,10 @@
         };
       }
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cbh";
         action = "<cmd>CBlabox5<CR>";
         options = {
@@ -184,7 +204,10 @@
         };
       }
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cbl";
         action = "<cmd>CBllline<CR>";
         options = {
@@ -192,7 +215,10 @@
         };
       }
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cbr";
         action = "<cmd>CBllline7<CR>";
         options = {
@@ -200,7 +226,10 @@
         };
       }
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cbt";
         action = "<cmd>CBccbox<CR>";
         options = {
@@ -216,7 +245,10 @@
         };
       }
       {
-        mode = ["n" "v"];
+        mode = [
+          "n"
+          "v"
+        ];
         key = "<leader>cby";
         action = "<cmd>CBy<CR>";
         options = {
