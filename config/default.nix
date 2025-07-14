@@ -12,5 +12,6 @@
     ./telescope
     ./treesitter
     ./visuals
+    ./wakatime
   ];
 }

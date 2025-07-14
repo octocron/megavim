@@ -22,10 +22,10 @@
       }
       {
         mode = "n";
-        key = "<Leader>v";
+        key = "<Leader>kv";
         action = "<C-v>";
         options = {
-          desc = "Enter Visual Block Mode";
+          desc = "Enter Visual Block";
           silent = true;
         };
       }
@@ -356,6 +356,26 @@
         action = ":TransparentToggle<CR>";
         options = {
           desc = "Toggle Transparent";
+          silent = true;
+        };
+      }
+
+      # INFO: Wakatime
+      {
+        mode = "n";
+        key = "<leader>wa";
+        action = ":WakaTimeApiKey<CR>";
+        options = {
+          desc = "Add Wakatime Api Key";
+          silent = true;
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>wt";
+        action = ":WakaTimeToday<CR>";
+        options = {
+          desc = "Wakatime Today";
           silent = true;
         };
       }
