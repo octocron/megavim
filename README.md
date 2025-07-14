@@ -65,7 +65,7 @@ nix run gitlab:megacron/megavim
 ```
 
 ```nix
-# configuration.nix
+# configuration.nix // choose either NixOS or home-manager
 { inputs, system, ... }:
 {
   # NixOS
@@ -74,7 +74,15 @@ nix run gitlab:megacron/megavim
   home.packages = [ inputs.megavim.packages.${pkgs.system}.default ];
 }
 ```
+> When installed this way there may come a time you want to update megavim without  
+> updating the whole system (flake).  We can pick a single input this way:
+```zsh
+# Check for and update only megavim
+nix flake lock --update-input megavim
 
+# if the lock file update just do a rebuild
+sudo nixos-rebuild switch --flake ~/some/path/
+```
 ## :pushpin: Overlay
 
 > This input can then be used as an overlay to replace the default neovim.  
