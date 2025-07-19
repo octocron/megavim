@@ -1,3 +1,4 @@
+# https://wakatime.com/settings/api-key
 {
   plugins = {
     wakatime = {
