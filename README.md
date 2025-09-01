@@ -30,10 +30,11 @@
 > Keep context for deeply nested code.
 
 > A Nix version of Neovim.  
-> Nixvim input is locked to prevent breaking changes.
+> Nixvim input is locked to prevent breaking changes but updated every few months.
 
 ## :joystick: Commands
 
+> For the bufferline tabs use alt+h | alt+l to toggle between tabs.  
 > These commands are also used with spacebar menu list.  
 > Just to list to make you aware of them.
 
@@ -44,10 +45,12 @@
 
 ## :nut_and_bolt: How to Run
 
-> You can run this directly from the command line with:
+> If using nix you can try with either gitlab or github:
 
 ```shell
 nix run gitlab:megacron/megavim
+
+nix run github:octocron/megavim
 ```
 
 ## :floppy_disk: Direct Install
@@ -74,8 +77,10 @@ nix run gitlab:megacron/megavim
   home.packages = [ inputs.megavim.packages.${pkgs.system}.default ];
 }
 ```
+
 > When installed this way there may come a time you want to update megavim without  
-> updating the whole system (flake).  We can pick a single input this way:
+> updating the whole system (flake). We can pick a single input this way:
+
 ```zsh
 # Check for and update only megavim
 nix flake lock --update-input megavim
@@ -83,6 +88,7 @@ nix flake lock --update-input megavim
 # if the lock file update just do a rebuild
 sudo nixos-rebuild switch --flake ~/some/path/
 ```
+
 ## :pushpin: Overlay
 
 > This input can then be used as an overlay to replace the default neovim.  

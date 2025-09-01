@@ -4,17 +4,62 @@
       enable = true;
 
       servers = {
-        gopls.enable = true; # go
-        kotlin_language_server.enable = true; # kotlin
-        lua_ls.enable = true; # lua
+        gopls = {
+          enable = true;
+          settings = {
+            gofumpt = true; # Go
+          };
+        };
+        jsonls = {
+          enable = true;
+          settings = {
+            json = {
+              format = {
+                enable = true; # JSON
+              };
+            };
+          };
+        };
+        kotlin_language_server.enable = true; # Kotlin
+        lua_ls = {
+          enable = true;
+          settings = {
+            Lua = {
+              format = {
+                enable = true; # Lua
+              };
+            };
+          };
+        };
         marksman.enable = true; # markdown
         nil_ls.enable = true; # nix
-        jsonls.enable = true; # json
         nushell.enable = true; # nushell
-        pylsp.enable = true; # python
-        taplo.enable = true; # toml
-        terraformls.enable = true; # terraform
-        yamlls.enable = true; # yaml
+        pylsp = {
+          enable = true;
+          settings = {
+            pylsp = {
+              plugins = {
+                autopep8.enabled = true; # Python
+              };
+            };
+          };
+        };
+        taplo = {
+          enable = true;
+          settings = {
+            formatter = {
+              enabled = true; # TOML
+            };
+          };
+        };
+        terraformls = {
+          enable = true;
+          settings = {
+            formatting = {
+              enable = true; # Terraform
+            };
+          };
+        };
       };
     };
 
@@ -28,17 +73,6 @@
 
     rustaceanvim = {
       enable = true;
-
-      server = {
-        # EOL inlays when?
-        # https://github.com/rust-lang/rust-analyzer/issues/4318
-        # onAttach = ''
-        #   function(client, bufnr)
-        #     vim.lsp.inlay_hint.enable(bufnt, true)
-        #   end
-        # '';
-      };
-
       settings = {
         RustaceanToolOpts.enable_clippy = true;
       };
@@ -57,7 +91,6 @@
         };
         diagnostics = {
           statix.enable = true;
-          yamllint.enable = true;
         };
         formatting = {
           black = {
@@ -68,11 +101,10 @@
               }
             '';
           };
-          goimports.enable = true;
           alejandra.enable = true;
-          prettierd.enable = true;
+          goimports.enable = true;
+          prettier.enable = true;
           stylua.enable = true;
-          yamlfmt.enable = true;
         };
       };
     };
