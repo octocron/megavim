@@ -1,6 +1,0 @@
-{
-  imports = [
-    #./codeium.nix
-  ];
-}
-

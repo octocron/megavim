@@ -18,6 +18,7 @@
     ./notify.nix
     ./precognition.nix
     ./rainbow-delimiters.nix
+    ./smear_cursor.nix
     ./tmux.nix
     ./toggleterm.nix
     ./undotree.nix

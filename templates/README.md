@@ -7,20 +7,9 @@
 
 #### plugins not yet in nixvim
 
-> plugins missing from my orinal nvim (lua)
-
-- aerial
-- file browser
-- symbols outline
-- tokyodark theme
-- vim-maximizer
+> I have fully ported all significant plugins from my lua neovim!
 
 #### future changes
 
 > I can't get harpoon to work | skill issue :p  
 > Over time plan to widdle this config down to least plugins as possible.
-
-#### Usage
-
-> add file to config  
-> add file name to relative default.nix

@@ -1,7 +1,7 @@
 {
   imports = [
+    ./ai
     ./auto
-    ./codeium
     ./comments
     ./core
     ./filetree

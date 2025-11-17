@@ -21,9 +21,9 @@
 
 ## :electric_plug: Features
 
-> Codium: with ability to connect project context to your account.  
+> AI: Choose from Code Companion or Opencode (default). These will hook into most models.
 > Hardtime: For forcing you to learn vim, and get hint of better ways.  
-> Precognition: For vim suggestions.  
+> Precognition: For vim suggestions if you are learing vim motions.  
 > Glow: To toggle markdown preview.  
 > LazyGit: For easy git management.  
 > Linting, formatting, syntax highlighting, etc...for most languages.  
@@ -32,11 +32,22 @@
 > A Nix version of Neovim.  
 > Nixvim input is locked to prevent breaking changes but updated every few months.
 
+## :speed: Quick Start
+
+> To make your own changes to customize to YOUR needs:
+
+- Fork the repo
+- Clone the fork
+- Make your changes ( comment out/in plugins, change colorscheme, keybindings, etc. )
+- add your fork to your inputs in your own flake.nix
+- or use stand alone with a nix run git{hub|lab}:username/branch of your fork
+
 ## :joystick: Commands
 
+> Just to list to make you aware of them.  
 > For the bufferline tabs use alt+h | alt+l to toggle between tabs.  
-> These commands are also used with spacebar menu list.  
-> Just to list to make you aware of them.
+> Open a file into a vertical split use ctrl+v.  
+> These commands are also used with spacebar menu list.
 
 ```vim
 :h holy-grail                   # see everything vim can do
@@ -45,7 +56,7 @@
 
 ## :nut_and_bolt: How to Run
 
-> If using nix you can try with either gitlab or github:
+> If nix is installed on your system you can try megavim from either gitlab or github:
 
 ```shell
 nix run gitlab:megacron/megavim
@@ -56,6 +67,7 @@ nix run github:octocron/megavim
 ## :floppy_disk: Direct Install
 
 > You can also plug this into a flake to include it into a system configuration.  
+> If you fork, follow the same instructions but replace the url to your fork.  
 > Make sure that neovim is UNINSTALLED!! Otherwise megavim cannot set itself as default!
 
 ```nix

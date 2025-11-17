@@ -86,7 +86,7 @@
       # INFO: Autosave
       {
         mode = "n";
-        key = "<leader>ts";
+        key = "<leader>ta";
         action = "<cmd>ASToggle<CR>";
         options.desc = "Toggle Autosave";
       }
@@ -320,6 +320,15 @@
         };
       }
 
+      # INFO: smear-cursor
+      {
+        mode = "n";
+        key = "<leader>ts";
+        action = ":SmearCursorToggle<CR>";
+        options = {
+          desc = "Toggle Smear";
+        };
+      }
       # INFO: todo-comments
       {
         mode = "n";

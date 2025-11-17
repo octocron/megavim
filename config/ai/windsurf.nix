@@ -1,8 +1,11 @@
-{ pkgs, lib, ... }:
-
+# NOTE: Formerly Codeium
 {
+  pkgs,
+  lib,
+  ...
+}: {
   plugins = {
-    codeium-nvim = {
+    windsurf-nvim = {
       enable = true;
       settings = {
         enable_chat = true;
@@ -14,12 +17,12 @@
         tools = {
           curl = lib.getExe pkgs.curl;
           gzip = lib.getExe pkgs.gzip;
-          uname = lib.getExe' pkgs.coreutils "uname";
-          uuidgen = lib.getExe' pkgs."uuidgen";
           #language_server = { };
+        };
+        workspace_root = {
+          use_lsp = true;
         };
       };
     };
   };
 }
-
