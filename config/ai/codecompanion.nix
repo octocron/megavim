@@ -1,9 +1,5 @@
 # NOTE: This requires aerial, snacks and wtf.  Aerial is always on by default.
 {
-  lib,
-  pkgs,
-  ...
-}: {
   plugins = {
     snacks.enable = true;
     wtf.enable = true;

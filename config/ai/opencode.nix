@@ -1,11 +1,6 @@
 # INFO: opencode auth login
 # this is how best to add models, it will ask for api key
 {
-  pkgs,
-  lib,
-  ...
-}:
-{
   plugins = {
     opencode = {
       enable = true;

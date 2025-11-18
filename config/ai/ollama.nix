@@ -1,8 +1,4 @@
 {
-  pkgs,
-  lib,
-  ...
-}: {
   plugins = {
     ollama = {
       enable = true;

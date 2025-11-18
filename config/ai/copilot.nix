@@ -1,8 +1,4 @@
 {
-  lib,
-  pkgs,
-  ...
-}: {
   plugins = {
     copilot-lua = {
       enable = true;
@@ -47,7 +43,7 @@
           "." = false;
         };
         copilotNodeCommand = "node";
-        serverOptsOverrides = {};
+        serverOptsOverrides = { };
       };
     };
     plugins.copilot-chat = {
