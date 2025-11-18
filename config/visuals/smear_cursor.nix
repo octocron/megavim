@@ -8,7 +8,7 @@
       enable = true;
       autoLoad = true;
       settings = {
-        cursor_color = "#ffaa00";
+        cursor_color = "#ffaa00"; # set to none to match text color at target cursor position
         gamma = 1.0;
         hide_target_hack = true;
         stiffness = 0.3;

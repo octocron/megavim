@@ -12,7 +12,7 @@
       ];
       disable_max_lines = 5000;
       highlight_on_hover = true;
-      open_automatic = true;
+      open_automatic = false;
     };
   };
 }

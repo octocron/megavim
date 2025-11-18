@@ -1,18 +1,22 @@
 {
-  plugins.illuminate = {
-    enable = true;
-    underCursor = true;
-    minCountToHighlight = 2;
-    filetypesDenylist = [
-      "alpha"
-      "harpoon"
-      "TelescopePrompt"
-    ];
-    providers = [
-      "lsp"
-      "treesitter"
-      "regex"
-    ];
+  plugins = {
+    illuminate = {
+      enable = true;
+      settings = {
+        underCursor = true;
+        minCountToHighlight = 2;
+        filetypesDenylist = [
+          "alpha"
+          "harpoon"
+          "TelescopePrompt"
+        ];
+        providers = [
+          "lsp"
+          "treesitter"
+          "regex"
+        ];
+      };
+    };
   };
 
   highlight = {

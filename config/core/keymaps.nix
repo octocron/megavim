@@ -385,7 +385,6 @@
         action = ":WakaTimeToday<CR>";
         options = {
           desc = "Wakatime Today";
-          silent = true;
         };
       }
     ];

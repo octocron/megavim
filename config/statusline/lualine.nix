@@ -1,6 +1,4 @@
-_:
-
-{
+_: {
   plugins.lualine = {
     enable = true;
     settings = {
@@ -53,14 +51,15 @@ _:
         lualine_c = [
           {
             __unkeyed-1 = "diagnostic";
-            _raw = ''{
-              symbols = {
-                error = " ";
-                warn = " ";
-                info = " ";
-                hint = "󰝶 ";
-              };
-            }'';
+            _raw = ''
+              {
+                            symbols = {
+                              error = " ";
+                              warn = " ";
+                              info = " ";
+                              hint = "󰝶 ";
+                            };
+                          }'';
           }
           {
             __unkeyed-2 = "filetype";
@@ -68,24 +67,26 @@ _:
               left = "";
               right = "";
             };
-            _raw = ''{
-              icon_only = true;
-              padding = {
-                left = 1;
-                right = 0;
-              };
-            }'';
+            _raw = ''
+              {
+                            icon_only = true;
+                            padding = {
+                              left = 1;
+                              right = 0;
+                            };
+                          }'';
           }
           {
             __unkeyed-3 = "filename";
-            _raw = ''{
-              path = 1;
-              symbols = {
-                modified = "  ";
-                readonly = "";
-                unnamed = "";
-              };
-            }'';
+            _raw = ''
+              {
+                            path = 1;
+                            symbols = {
+                              modified = "  ";
+                              readonly = "";
+                              unnamed = "";
+                            };
+                          }'';
           }
         ];
         lualine_x = [
@@ -100,6 +101,9 @@ _:
         lualine_z = [
           {
             __unkeyed-1 = "location";
+          }
+          {
+            __unkeyed-1 = "require('opencode').statusline}";
           }
         ];
       };

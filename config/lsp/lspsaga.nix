@@ -1,34 +1,36 @@
 {
   plugins.lspsaga = {
     enable = true;
-    codeAction = {
-      showServerName = true;
-    };
+    settings = {
+      codeAction = {
+        showServerName = true;
+      };
 
-    diagnostic = {
-      showCodeAction = true;
-      borderFollow = true;
-      textHlFollow = true;
-    };
+      diagnostic = {
+        showCodeAction = true;
+        borderFollow = true;
+        textHlFollow = true;
+      };
 
-    lightbulb = {
-      enable = true;
-      sign = true;
-      virtualText = false;
-    };
+      lightbulb = {
+        enable = true;
+        sign = true;
+        virtualText = false;
+      };
 
-    outline = {
-      winPosition = "right";
-      winWidth = 40;
-    };
+      outline = {
+        winPosition = "right";
+        winWidth = 40;
+      };
 
-    symbolInWinbar = {
-      enable = true;
-    };
+      symbolInWinbar = {
+        enable = true;
+      };
 
-    ui = {
-      border = "rounded";
-      devicon = true;
+      ui = {
+        border = "rounded";
+        devicon = true;
+      };
     };
   };
 

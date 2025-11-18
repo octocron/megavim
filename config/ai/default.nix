@@ -3,7 +3,7 @@
     #./codecompanion.nix
     #./copilot.nix
     #/.ollama.nix
-    #./opencode.nix
+    ./opencode.nix
     ./windsurf.nix
   ];
 }

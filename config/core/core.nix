@@ -13,6 +13,9 @@
     };
 
     opts = {
+      # NOTE: if using auto_reload with opencode
+      #auto_reload = true;
+
       # 24bit colors
       termguicolors = true;
 
@@ -20,7 +23,7 @@
       confirm = true;
 
       # cursor
-      scrolloff = 2;
+      scrolloff = 0; # how many lines to keep above/below cursor
 
       # decrease update time
       updatetime = 200;

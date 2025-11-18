@@ -1,4 +1,3 @@
 #settings for cmd & opt
 {
-
 }

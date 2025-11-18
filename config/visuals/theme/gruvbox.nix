@@ -13,8 +13,8 @@ _: {
           bright_orange = "#ffee00"; # cursor highlighter, alpha file opts
           bright_purple = "#aa00aa"; # booleans
           bright_aqua = "#22ddcc"; # notify border, note, info
-          dark1 = "#383838"; # cursorline
-          dark2 = "#333333"; # file counter, command bg
+          dark1 = "#111111"; # cursorline
+          dark2 = "#000000"; # file counter, command bg
           dark3 = "#007777"; # file divider
           dark4 = "#ff0077"; # gutter
           gray = "#ffeeaa"; # comments, precog

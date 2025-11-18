@@ -1,40 +1,44 @@
 {
   plugins.nvim-tree = {
     enable = true;
-    actions = {
-      windowPicker = {
-        enable = true;
-      };
-    };
-    diagnostics.enable = true;
-    filters = {
-      custom = [ ".DS_Store" ]; # <leader>ef
-    };
-    git = {
-      enable = true; # git integrate with icons and colors
-      ignore = false; # files in .gitignore would be ignored by tree
-    };
-    hijackCursor = true;
-    modified.enable = true; # show unsaved files
-    renderer = {
-      indentWidth = 1;
-      indentMarkers = {
-        enable = true;
-        inlineArrows = false;
-        icons = {
-          corner = "└";
-          edge = "│";
-          item = "│";
-          none = " ";
+    settings = {
+      actions = {
+        open_file = {
+          window_picker = {
+            enable = true;
+          };
         };
       };
-    };
-    updateFocusedFile.enable = true;
-    view = {
-      width = 38;
-      side = "left";
-      float.enable = false;
-      relativenumber = true;
+      diagnostics.enable = true;
+      filters = {
+        custom = [ ".DS_Store" ]; # <leader>ef
+      };
+      git = {
+        enable = true; # git integrate with icons and colors
+        ignore = false; # files in .gitignore would be ignored by tree
+      };
+      hijack_cursor = true;
+      modified.enable = true; # show unsaved files
+      renderer = {
+        indent_width = 1;
+        indent_markers = {
+          enable = true;
+          inline_arrows = false;
+          icons = {
+            corner = "└";
+            edge = "│";
+            item = "│";
+            none = " ";
+          };
+        };
+      };
+      update_focused_file.enable = true;
+      view = {
+        width = 38;
+        side = "left";
+        float.enable = false;
+        relativenumber = true;
+      };
     };
   };
 
