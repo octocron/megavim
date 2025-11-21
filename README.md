@@ -21,7 +21,7 @@
 
 ## :electric_plug: Features
 
-> AI: Choose from Code Companion or Opencode (default). These will hook into most models.
+> AI: Choose from Code Companion or Opencode (default). These will hook into most models.  
 > Hardtime: For forcing you to learn vim, and get hint of better ways.  
 > Precognition: For vim suggestions if you are learing vim motions.  
 > Glow: To toggle markdown preview.  
@@ -32,7 +32,7 @@
 > A Nix version of Neovim.  
 > Nixvim input is locked to prevent breaking changes but updated every few months.
 
-## :speed: Quick Start
+## :rabbit: Quick Start
 
 > To make your own changes to customize to YOUR needs:
 
