@@ -29,10 +29,14 @@
 > Linting, formatting, syntax highlighting, etc...for most languages.  
 > Keep context for deeply nested code.
 
-> A Nix version of Neovim.  
-> Nixvim input is locked to prevent breaking changes but updated every few months.
+ > A Nix version of Neovim.  
+ > Nixvim input is locked to prevent breaking changes but updated every few months.
 
-## :rabbit: Quick Start
+ ## :bulb: Why Nix over Lua?
+
+ > Nix offers declarative, reproducible Neovim configurations. Unlike Lua scripts, Nix ensures consistent setups across machines, automatic dependency management, and version pinning to prevent breakage. It's ideal for users who value reliability and easy config sharing.
+
+ ## :rabbit: Quick Start
 
 > To make your own changes to customize to YOUR needs:
 
