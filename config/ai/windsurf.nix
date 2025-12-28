@@ -1,9 +1,10 @@
-# NOTE: Formerly Codeium
+# NOTE: Formerly Codeium: use browser for Codeium Auth for best results.
 {
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   plugins = {
     windsurf-nvim = {
       enable = true;
