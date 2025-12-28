@@ -29,15 +29,6 @@
       };
     };
 
-    ollama = {
-      enable = true;
-      settings = {
-        action = "display";
-        model = "deepseek-coder-v2:16b";
-        url = "http://127.0.0.1:11434";
-      };
-    };
-
     snacks = {
       enable = true;
       settings = {

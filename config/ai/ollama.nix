@@ -4,7 +4,7 @@
       enable = true;
       settings = {
         action = "display";
-        model = "mistral";
+        model = "deepseek-coder-v2:16b";
         prompts = {
           my-prompt = {
             action = "display";
