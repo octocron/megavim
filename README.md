@@ -21,7 +21,7 @@
 
 ## :electric_plug: Features
 
-> AI: Choose from Code Companion or Opencode (default). These will hook into most models.  
+> AI: Choose from Code Companion or Opencode (default:only works on darwin). These will hook into most models.  
 > Thank you Windsurf for tab completion and inline edits. (unlimited)  
 > Hardtime: For forcing you to learn vim, and get hint of better ways.  
 > Precognition: For vim suggestions if you are learning vim motions.  

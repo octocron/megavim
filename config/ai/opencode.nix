@@ -1,5 +1,7 @@
 # INFO: opencode auth login
 # this is how best to add models, it will ask for api key
+# as of Jan 2026 Opencode plugin only works on macOS
+# otherwise you need their full blown app (mac, windows, linux)
 {
   plugins = {
     opencode = {
