@@ -103,8 +103,17 @@
           };
           alejandra.enable = true;
           goimports.enable = true;
-          prettier.enable = true;
+          prettier = {
+            enable = true;
+            settings = {
+              disabled_filetypes = [
+                "yaml"
+                "yml"
+              ];
+            };
+          };
           stylua.enable = true;
+          yamlfmt.enable = true;
         };
       };
     };
