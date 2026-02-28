@@ -1,6 +1,6 @@
 {
   imports = [
-    #./codecompanion.nix
+    ./codecompanion.nix
     #./copilot.nix
     #/.ollama.nix
     ./opencode.nix
